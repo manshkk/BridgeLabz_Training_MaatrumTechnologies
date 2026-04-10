@@ -1,0 +1,306 @@
+1. Programming Fundamentals
+
+What is Programming
+Programming is the act of giving a computer a sequence of instructions so 
+it can perform specific tasks. Sources like W3Schools explain that “programming is 
+telling a computer what to do”. Southern New Hampshire University further describes 
+computer programming as a process where professionals write code “that instructs 
+how a computer, application or software program performs,” and at its core 
+it is “a set of instructions to facilitate specific actions”. In other words, 
+programming translates human ideas into a language that computers understand so 
+they can carry out operations—from simple calculations to complex data processing.
+
+# This program adds two numbers provided by the user.
+
+# Get user input (text) and convert it to integers
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+
+# Compute the sum
+sum_result = a + b
+
+# Display the result
+print("The sum of", a, "and", b, "is", sum_result)
+
+How it works:
+
+The program asks the user for two numbers (input function).
+It converts those inputs from text strings to integers (int).
+It adds them together and stores the result in sum_result.
+It prints out a message showing the sum.
+
+When you run this program, it will prompt you for two numbers and then display their sum. 
+This example illustrates the core idea of programming—writing a sequence of instructions 
+so the computer knows what steps to follow to achieve the desired outcome.
+
+What is a Programming Language
+A programming language is a formal system of keywords, symbols and rules used to 
+write instructions that tell a computer what to do. It enables humans to communicate 
+with machines by defining the syntax (how the code is written) and semantics (what the code means) 
+needed to perform tasks. Examples include Python, C, JavaScript and Java, each designed for 
+different purposes such as web development, systems programming or AI
+
+High-Level vs Low-Level Languages
+High‑Level vs. Low‑Level Programming Languages
+Overview
+
+Programming languages span a spectrum of abstraction. At one end are high‑level languages (HLLs), which offer a human‑friendly syntax and hide most of the hardware details. At the other end are low‑level languages (LLLs), which are closer to machine code and provide direct access to hardware. Understanding the distinctions between these two categories helps developers select the right tool for a given task. Sources such as GeeksforGeeks and Medium note that high‑level languages like Python or Java enable rapid development but sacrifice some performance, whereas low‑level languages like assembly or C give programmers precise control over memory and processor registers.
+
+Characteristics of High‑Level Languages
+
+High‑level languages are designed to simplify programming by abstracting away complex hardware operations. Key characteristics include:
+
+Human‑readable syntax: HLLs use words and constructs that resemble natural language, making code easier to read and write. Examples include Python, Java, C++ and JavaScript.
+Hardware abstraction: They shield developers from the details of memory management and CPU instructions; the compiler or interpreter translates high‑level code into machine code.
+Portability: Programs written in high‑level languages can usually run on different platforms with minimal changes because they are not tied to a specific hardware architecture.
+Rapid development: Built‑in libraries and features enable quick prototyping and reduce development time. Medium points out that this abstraction “enhances productivity” and encourages cleaner code design.
+Automatic memory management: Languages like Java and Python use garbage collectors to handle memory allocation and deallocation for the programmer.
+Built‑in error handling: HLLs often include exception handling mechanisms that simplify debugging and error recovery.
+Performance trade‑off: Because of the abstraction layers, programs may execute more slowly than equivalent low‑level code and can incur performance overhead.
+Characteristics of Low‑Level Languages
+
+Low‑level languages operate closer to hardware, providing direct control but requiring more expertise. Their characteristics include:
+
+Direct hardware access: LLLs like assembly and machine code allow programmers to interface directly with CPU registers and memory. This proximity to hardware yields highly efficient code.
+Platform specificity: Because code is tied to a particular processor architecture, programs often need to be rewritten to run on different systems.
+Manual memory management: Developers must explicitly allocate and free memory, offering precise control but increasing complexity and error risk.
+Complex syntax: Assembly language uses mnemonic codes and requires detailed knowledge of hardware architecture. Medium notes that writing low‑level code demands an in‑depth understanding of hardware and leads to longer development cycles.
+High performance: Programs can run with unparalleled speed and efficiency because they are optimized for the target hardware. This makes low‑level languages suitable for performance‑critical tasks such as operating systems and embedded systems.
+Limited error handling: LLLs lack built‑in features for error recovery; developers must implement checks manually.
+Typical uses: System programming, device drivers, embedded systems and real‑time applications where precise timing and resource management are crucial
+
+Key Differences
+
+The following table summarizes the core distinctions between high‑level and low‑level languages. Each cell contains a short phrase or keyword to comply with formatting guidelines.
+
+| Aspect                | High‑Level Language                      | Low‑Level Language                                  |
+| --------------------- | ---------------------------------------- | --------------------------------------------------- |
+| **Abstraction level** | High; closer to human language           | Low; closer to machine code                         |
+| **Ease of learning**  | Easier to learn and use                  | Requires detailed hardware knowledge                |
+| **Portability**       | Highly portable across systems           | Platform dependent                                  |
+| **Development speed** | Faster development, rapid prototyping    | Slower due to complexity and debugging              |
+| **Memory management** | Automatic via garbage collection         | Manual; explicit allocation/deallocation            |
+| **Error handling**    | Built‑in exception handling              | Limited; manual checks                              |
+| **Performance**       | Generally slower, may have overhead      | High performance and efficiency                     |
+| **Typical use cases** | Applications, web development, scripting | Operating systems, device drivers, embedded systems |
+
+Advantages and Disadvantages
+High‑Level Languages
+
+Advantages:
+
+Abstraction and productivity: They hide low‑level details and let developers focus on solving problems.
+Portability: Code can often run on multiple platforms without modification.
+Rapid development: Rich libraries and frameworks speed up coding and encourage cleaner design.
+Community and ecosystem: Popular high‑level languages (e.g., Python, JavaScript) have large communities and extensive documentation, which eases learning and troubleshooting.
+
+Disadvantages:
+
+Performance overhead: Abstracting away hardware can introduce slower execution.
+Less control: Developers have limited ability to optimise for specific hardware.
+Learning curve: Despite being user‑friendly, high‑level languages still require understanding of syntax, libraries and frameworks.
+Low‑Level Languages
+
+Advantages:
+
+Unmatched efficiency: Code executes quickly and uses minimal resources.
+Precise control: Programmers can manage memory and CPU registers directly.
+Optimisation: Suitable for performance‑critical systems where every cycle counts.
+
+Disadvantages:
+
+Complexity: Requires deep knowledge of hardware architecture and instruction sets, leading to longer development cycles.
+Platform dependence: Code is tied to specific hardware and is less portable.
+Manual memory management: Increased risk of errors such as memory leaks and buffer overflows.
+Choosing Between High‑Level and Low‑Level Languages
+
+Selecting the appropriate language depends on project requirements, performance goals and developer expertise. Medium’s comparison suggests using low‑level languages when building operating systems, firmware or embedded systems where maximum efficiency and precise control are essential. High‑level languages are preferable for web or desktop applications, rapid prototyping and projects that must be maintainable and portable. In practice, many systems incorporate both levels—high‑level languages for most application logic and low‑level languages for performance‑critical modules—leveraging the strengths of each.
+
+Examples of Real‑World Implementations
+Low‑level example: The Linux kernel is primarily written in C, a language that offers low‑level control over memory and hardware. According to Medium, the need for direct hardware interaction and performance optimisation drove this choice.
+High‑level example: Instagram’s backend infrastructure uses Python. Python’s ease of use and extensive library ecosystem enabled rapid development and scalability.
+Conclusion
+
+High‑level and low‑level programming languages serve complementary roles. High‑level languages emphasise readability, rapid development and portability, making them ideal for most application‑level software. Low‑level languages prioritise performance and fine‑grained control, which are critical for operating systems and hardware‑constrained environments. Understanding their differences allows developers to choose the right tool—or combination of tools—for a given project.
+
+Compiler vs Interpreter
+Introduction
+
+Modern computers only execute instructions written in machine language, a binary format of 0s and 1s. Humans write software in high‑level languages (HLLs) that are easier to read and maintain. To bridge this gap, special programs known as compilers and interpreters translate HLL code into machine code. Although both serve the same overall purpose, they differ significantly in how and when they perform the translation, leading to trade‑offs in speed, flexibility and development workflow. Understanding these differences helps developers choose the right tool for a given project.
+
+What Is a Compiler?
+
+A compiler is a computer program that translates an entire source program written in a high‑level language into an equivalent program in a lower‑level language, such as assembly or machine code. The resulting machine code is stored in an executable file; once compiled, the code can run without the compiler. Compilers enable programmers to write in readable languages while ensuring the final program runs efficiently on hardware.
+
+How Compilers Work
+
+Compilers typically perform several stages of translation:
+
+Preprocessing – expands the source code (e.g., handling macros) before compilation.
+Compilation – converts the preprocessed code into assembly code.
+Assembly – an assembler translates the assembly code into object code.
+Linking – a linker combines the object code with libraries and resolves external references.
+Execution – the final executable file runs directly on hardware without further translation.
+
+Because compilers analyze and translate the whole program ahead of time, they detect errors only after compilation but can optimise the entire code for speed and efficiency. Compiled languages include C, C++, and C#.
+
+Advantages of Compilers
+
+Compiled code generally runs faster than interpreted code because it is already translated into machine language. Additional benefits include:
+
+Efficiency and performance: Suitable for performance‑critical applications like real‑time systems and scientific simulations.
+Debugging tools: Compilers often provide error messages, syntax highlighting and debuggers to help fix errors.
+Security and type checking: Compilers can enforce type safety and catch some errors at compile time.
+No runtime dependencies: The executable file does not require the compiler to be present on the target system.
+Drawbacks of Compilers
+
+Despite their speed, compilers have limitations:
+
+Compilation time: For large programs, compilation can be time‑consuming.
+Platform specificity: Compiled programs often need to be recompiled to run on different architectures.
+Less flexibility: Any change to the source code requires recompiling the entire program.
+Resource consumption: Compilers can consume significant memory and CPU during compilation.
+What Is an Interpreter?
+
+An interpreter is a program that directly executes instructions written in a high‑level language without generating a standalone machine‑code file. It reads the source code, translates it into an intermediate or machine‑readable form and executes it immediately. This line‑by‑line translation provides immediate feedback, making interpreters popular for scripting, prototyping and educational environments.
+
+How Interpreters Work
+
+Interpreters operate in a cycle of reading, parsing, translating and executing each statement individually:
+
+Reading: The interpreter reads one line or statement of the source code.
+Parsing: It checks syntax and semantics to ensure the statement follows the language rules.
+Translation: The statement is translated into an intermediate representation or directly into machine code. The translation is usually not stored for future runs unless caching (e.g., Just‑In‑Time (JIT) compilation) is used.
+Execution: The interpreter executes the translated instruction immediately.
+
+This process repeats for each statement until the program terminates or an error occurs. Because translation happens at runtime, interpreters can modify and execute code dynamically.
+
+Advantages of Interpreters
+
+Interpretation offers several benefits:
+
+Immediate execution and debugging: Code runs as soon as it is written, providing rapid feedback and making it easier to locate and fix errors line by line.
+Platform independence: The same source code can run on any system with the appropriate interpreter installed.
+Flexibility: Developers can modify and test code quickly without waiting for a compilation step.
+Ease of use: Interpreters often have simple interfaces suited for beginners and scripting tasks.
+Drawbacks of Interpreters
+
+Interpreters also have notable disadvantages:
+
+Slower execution: Translating and executing code line by line introduces overhead, so interpreted programs typically run slower than compiled programs.
+Limited optimisation: Interpreters cannot optimise code as effectively as compilers.
+Higher memory usage: Interpreted languages often require more memory to store the interpreter and runtime environment.
+Potential security risks: Dynamic code execution can lead to vulnerabilities if not properly secured.
+Key Differences Between Compilers and Interpreters
+
+The following table summarises the essential differences. Each entry uses succinct phrases to highlight contrasts
+| Feature                  | Compiler                                                                             | Interpreter                                                          |
+| ------------------------ | ------------------------------------------------------------------------------------ | -------------------------------------------------------------------- |
+| **Translation approach** | Translates the entire program into machine code before execution                     | Translates and executes code line by line at runtime                 |
+| **Output**               | Generates an executable file or object code                                          | No permanent machine code file; executes directly                    |
+| **Speed of execution**   | Faster during program execution because the code is pre‑translated                   | Slower because translation happens on the fly                        |
+| **Compilation time**     | Requires time to compile entire program before running                               | No separate compilation step; immediate execution                    |
+| **Error reporting**      | Displays errors after compilation; catches syntax and some semantic errors together  | Reports errors line by line as they are encountered                  |
+| **Memory usage**         | More efficient at runtime; uses fewer resources after compilation                    | Requires interpreter and often more memory during execution          |
+| **Portability**          | Executables are platform‑specific and may need recompilation for other architectures | Same source code runs on any system with appropriate interpreter     |
+| **Use cases**            | Performance‑critical systems, production environments, games, operating systems      | Rapid prototyping, scripting, education, cross‑platform applications |
+
+Compile Time vs Runtime
+
+Overview
+
+Programs go through multiple phases when they are built and executed. Two important phases are compile time and runtime. During compile time, source code written by the programmer is transformed into a lower‑level representation (machine code or bytecode) by a compiler or interpreter. During runtime, the translated code is actually executed by the computer. Understanding the distinction helps developers diagnose errors and optimize performance.
+
+What happens at compile time?
+
+Compile time occurs before a program is run. Key characteristics include:
+
+Translation of source code – high‑level source code (e.g., Java, C or Python) is converted to machine code or an intermediate form. Baeldung notes that compile time is the period when programming code is converted to machine code. Educative similarly describes compile time as the period when the program code is translated into low‑level code or machine code.
+Syntax and semantic checking – the compiler analyzes the source code, checking for syntax, semantic and type errors. Compile‑time errors must be fixed before the code can be compiled; common errors include missing parentheses, undeclared variables and missing semicolons.
+Inputs and outputs – inputs include source files, interfaces, libraries and other dependencies; outputs include compiled code (such as object files or bytecode) if no errors are detected.
+Compile‑time errors
+
+Compile‑time errors are detected by the compiler. GeeksforGeeks explains that these errors occur when you violate the syntax rules of the language. Examples include:
+
+Missing punctuation such as missing parenthesis or semicolon.
+Using undeclared variables.
+Incorrect type usage or function signature mismatches (semantic errors).
+
+These errors prevent code from being compiled and must be fixed before the program can be run.
+
+What happens at runtime?
+
+Runtime is the period when a program is executing on a computer. Important characteristics include:
+
+Execution of translated code – runtime refers to the time when the code (already compiled into machine code) actually does what it was written to do. Baeldung notes that runtime generally occurs after compile time and represents the period when the program is running.
+Dynamic behavior – at runtime the program manipulates data, calls functions, allocates memory and interacts with the environment. Because the code is executing, many errors or behaviors are only visible at runtime.
+Runtime errors
+
+Runtime errors occur after successful compilation. They are not caught by the compiler and cause abnormal program behavior. Common runtime errors include:
+
+Division by zero – trying to divide a number by zero causes abnormal termination.
+Dereferencing a null pointer – accessing memory through a null reference leads to a crash.
+Out‑of‑memory errors – when the system cannot allocate more memory.
+Logical mistakes such as dividing by zero or taking the square root of a negative number. These errors often produce wrong results or abnormal termination.
+
+Runtime errors can be hard to trace because the compiler does not indicate them; they become apparent only when the code runs.
+
+Key differences
+
+The table below summarizes the main differences between compile time and runtime. The table uses keywords and short phrases rather than long sentences.
+| Aspect               | Compile time                                              | Runtime                                                                               |
+| -------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| **Period**           | Translation of source code to low‑level form              | Execution of compiled code                                                            |
+| **Input/Output**     | Inputs: source files, libraries; Output: object/bytecode  | Inputs: compiled code; Output: program results (printed output, updated files etc.)   |
+| **Language form**    | Source code in human‑readable syntax                      | Machine code or bytecode executed by CPU/VM                                           |
+| **Checks performed** | Syntax, semantic and type checking by compiler            | Execution of instructions; checks occur via runtime environment (e.g., memory access) |
+| **Typical errors**   | Syntax errors (missing semicolons, undeclared variables)  | Division by zero, null pointer dereference, out‑of‑memory, logical errors             |
+| **Error detection**  | Detected by compiler; prevent code from compiling         | Detected during execution; may cause program crash or incorrect output                |
+| **Developer action** | Errors must be fixed before the program can run           | Often require debugging and runtime checks (e.g., exception handling)                 |
+| **Focus**            | Understanding functions and objects; assigning properties | Performs the actual operations with less knowledge of program structure               |
+
+Examples
+Example 1: Compile‑time error vs runtime error
+
+Consider the following pseudo‑code:
+# Example 1: compile‑time error (syntax)
+def add_numbers(a, b):
+    return a + b  # correct syntax
+
+# Incorrect function with missing parenthesis and colon (compile‑time)
+def subtract_numbers(a, b)
+    return a - b
+
+# Example 2: runtime error (division by zero)
+def divide(a, b):
+    return a / b
+
+x = 10
+y = 0
+print(divide(x, y))  # causes runtime division‑by‑zero error
+The second function subtract_numbers lacks a colon after the parameter list. This is a syntax error; the program will not compile or run until it is fixed. Such errors are compile‑time errors.
+The call divide(10, 0) will compile, but at runtime the program will attempt to divide by zero, causing a runtime error.
+Example 2: Compile‑time constant evaluation vs runtime calculation
+
+Compilers often evaluate constant expressions at compile time, while variables whose values are not known until execution must be computed at runtime:
+// compile‑time constant
+const int size = 5 + 10;  // computed during compilation
+int array[size];
+
+// runtime calculation
+int n;
+scanf("%d", &n);
+int dynamicArray[n];  // size determined at runtime
+In this C example, size is computed at compile time because its value is a constant expression. The array array has a compile‑time size. However, the size of dynamicArray depends on user input (n), so memory allocation happens at runtime.
+
+Why the distinction matters
+
+Understanding compile time and runtime is important for several reasons:
+
+Debugging and error handling – Many syntax and type errors can be caught early during compilation; fixing them before deployment reduces the risk of runtime failures. However, developers must still anticipate and handle runtime errors (e.g., by using exceptions or validations).
+Performance optimization – Code executed at compile time (e.g., constant folding) can improve runtime performance. Identifying which operations can be moved to compile time (such as computing constant expressions) may reduce execution overhead.
+Programming language design – Languages differ in how much work they do at compile time versus runtime. For instance, statically typed languages perform more type checking during compilation, while dynamically typed languages defer many checks until runtime, affecting both performance and safety.
+Resource management – Compile‑time events occur on the developer’s machine and largely involve CPU and disk I/O to generate binaries. Runtime involves managing memory, CPU and I/O on the target machine; understanding this helps with debugging memory leaks or performance issues.
+Conclusion
+
+Compile time and runtime represent different phases in a program’s lifecycle. During compile time, the source code is translated into machine‑readable form and checked for syntax and type errors. Runtime starts once the program is executing; it is when the code actually performs tasks and interacts with memory and the environment. Recognizing the distinction helps developers anticipate and resolve errors, optimize performance and design efficient programs.
