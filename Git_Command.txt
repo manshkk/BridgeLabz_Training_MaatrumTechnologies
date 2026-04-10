@@ -1,0 +1,268 @@
+==============================
+      GIT COMMANDS GUIDE
+==============================
+
+This document is a professional reference for common Git commands.  Each command includes a succinct description and a clear example.  Use it as a study aid or quick lookup when working with Git.
+
+==============================
+BEGINNER LEVEL (1–15)
+Setup, Staging, and Viewing Basics
+==============================
+
+1. git init
+   Description:  Initialize a new Git repository in the current directory.
+   Example:      $ git init
+
+2. git config --global user.name "Your Name"
+   Description:  Set your global Git username for commit metadata.
+   Example:      $ git config --global user.name "Alice Sharma"
+
+3. git config --global user.email "your@email.com"
+   Description:  Set your global Git email address for commits.
+   Example:      $ git config --global user.email "alice@example.com"
+
+4. git config --global color.ui true
+   Description:  Enable colored output in Git for better readability.
+   Example:      $ git config --global color.ui true
+
+5. git clone [repository URL]
+   Description:  Download a remote repository and create a local copy.
+   Example:      $ git clone https://github.com/user/repo.git
+
+6. git add [file]
+   Description:  Stage changes in the specified file for the next commit.
+   Example:      $ git add index.html
+
+7. git commit -m "message"
+   Description:  Save staged changes with a meaningful commit message.
+   Example:      $ git commit -m "Add responsive navigation menu"
+
+8. git status
+   Description:  Display the state of the working directory and staging area.
+   Example:      $ git status
+
+9. git log --oneline
+   Description:  Show a condensed commit history with one line per commit.
+   Example:      $ git log --oneline
+
+10. git diff
+    Description:  Show differences for unstaged changes in your working directory.
+    Example:      $ git diff
+
+11. git diff HEAD
+    Description:  Show differences between the working directory and last commit.
+    Example:      $ git diff HEAD
+
+12. git config --list
+    Description:  List all available Git configuration settings.
+    Example:      $ git config --list
+
+13. git remote add origin [URL]
+    Description:  Link your local repository to a remote named "origin".
+    Example:      $ git remote add origin https://github.com/user/repo.git
+
+14. git remote -v
+    Description:  Display the remote repositories linked to your project.
+    Example:      $ git remote -v
+
+15. git remote rm origin
+    Description:  Remove the remote named "origin" from your local repo.
+    Example:      $ git remote rm origin
+
+==============================
+INTERMEDIATE LEVEL (16–35)
+Branches, Merges, and Collaboration
+==============================
+
+16. git branch
+    Description:  List local branches and highlight the current branch.
+    Example:      $ git branch
+
+17. git checkout -b [branch]
+    Description:  Create a new branch and switch to it immediately.
+    Example:      $ git checkout -b feature/login
+
+18. git switch [branch]
+    Description:  Switch to an existing branch (new command).
+    Example:      $ git switch main
+
+19. git checkout [branch]
+    Description:  Switch to an existing branch (legacy syntax).
+    Example:      $ git checkout development
+
+20. git merge [branch]
+    Description:  Merge the specified branch into your current branch.
+    Example:      $ git merge feature/login
+
+21. git pull
+    Description:  Fetch and integrate changes from the remote repository.
+    Example:      $ git pull
+
+22. git push
+    Description:  Upload your local commits to a remote repository.
+    Example:      $ git push
+
+23. git push -u origin [branch]
+    Description:  Push a branch to the remote and set it as upstream.
+    Example:      $ git push -u origin feature/login
+
+24. git clone -b [branch] [URL]
+    Description:  Clone a specific branch from a remote repository.
+    Example:      $ git clone -b development https://github.com/user/repo.git
+
+25. git branch -m old new
+    Description:  Rename a local branch from old to new.
+    Example:      $ git branch -m master main
+
+26. git push origin --delete [branch]
+    Description:  Delete a branch from the remote named "origin".
+    Example:      $ git push origin --delete old-feature
+
+27. git branch -d [branch]
+    Description:  Delete a local branch that has been merged or is no longer needed.
+    Example:      $ git branch -d obsolete-branch
+
+28. git fetch
+    Description:  Download objects and refs from the remote without merging.
+    Example:      $ git fetch
+
+29. git pull --rebase
+    Description:  Fetch and reapply your local changes on top of the updated history.
+    Example:      $ git pull --rebase
+
+30. git log
+    Description:  Display the full commit history with detailed messages.
+    Example:      $ git log
+
+31. git log --graph
+    Description:  Visualize commit history as a branching graph.
+    Example:      $ git log --graph --oneline --all
+
+32. git show-branch
+    Description:  Show branches and their respective commits for comparison.
+    Example:      $ git show-branch
+
+33. git tag v1.0
+    Description:  Tag a specific commit with a version label.
+    Example:      $ git tag v1.0
+
+34. git mv old new
+    Description:  Rename or move a file and stage the operation.
+    Example:      $ git mv README.md README_old.md
+
+==============================
+ADVANCED LEVEL (36–60)
+Undoing, Debugging, and Advanced Tools
+==============================
+
+36. git stash
+    Description:  Save your local modifications temporarily and revert to a clean working tree.
+    Example:      $ git stash
+
+37. git stash pop
+    Description:  Apply the most recent stash and remove it from the stash list.
+    Example:      $ git stash pop
+
+38. git stash apply
+    Description:  Apply a specific stash without removing it.
+    Example:      $ git stash apply stash@{0}
+
+39. git rm [file]
+    Description:  Remove a file from the working directory and staging area.
+    Example:      $ git rm oldfile.txt
+
+40. git clean -f
+    Description:  Forcefully delete untracked files in your working directory.
+    Example:      $ git clean -f
+
+41. git reset
+    Description:  Unstage changes for a specific file, keeping its contents.
+    Example:      $ git reset HEAD index.html
+
+42. git reset --soft HEAD~1
+    Description:  Move HEAD back one commit but keep changes staged.
+    Example:      $ git reset --soft HEAD~1
+
+43. git reset --hard HEAD~1
+    Description:  Move HEAD back one commit and discard all changes. Use carefully.
+    Example:      $ git reset --hard HEAD~1
+
+44. git commit --amend
+    Description:  Modify the last commit’s contents or message.
+    Example:      $ git commit --amend -m "Update README and fix typos"
+
+45. git merge --abort
+    Description:  Cancel an ongoing merge and restore the previous state.
+    Example:      $ git merge --abort
+
+46. git revert [commit]
+    Description:  Create a new commit that undoes the changes made by a specific commit.
+    Example:      $ git revert a1b2c3d4
+
+47. git rebase [branch]
+    Description:  Replay your changes on top of another branch, rewriting history.
+    Example:      $ git rebase main
+
+48. git show [commit]
+    Description:  Display details of a specific commit, including its diff.
+    Example:      $ git show a1b2c3d4
+
+49. git cherry-pick [commit]
+    Description:  Apply a single commit from another branch onto your current branch.
+    Example:      $ git cherry-pick a1b2c3d4
+
+50. git bisect
+    Description:  Use binary search to find which commit introduced a bug.
+    Example:
+        $ git bisect start
+        $ git bisect bad        # mark current commit as bad
+        $ git bisect good v1.0  # mark a known good commit
+        # Git will check out commits between to pinpoint the culprit
+
+51. git blame [file]
+    Description:  Show who last modified each line of a file with commit hashes.
+    Example:      $ git blame app.js
+
+52. git grep "pattern"
+    Description:  Search the repository for a text pattern.
+    Example:      $ git grep "TODO"
+
+53. git reflog
+    Description:  Show a log of changes to the HEAD and branch pointers.
+    Example:      $ git reflog
+
+54. git archive
+    Description:  Create an archive file of your repository, such as a ZIP or TAR.
+    Example:      $ git archive --format=zip --output=project.zip main
+
+55. git submodule add [URL] [path]
+    Description:  Add another Git repository as a submodule to your project.
+    Example:      $ git submodule add https://github.com/user/library.git libs/library
+
+56. Renaming a remote branch
+    Description:  Rename a branch on the remote by renaming locally, pushing the new branch, and deleting the old one.
+    Example:
+        $ git branch -m old-name new-name       # rename locally
+        $ git push origin new-name              # push new branch to remote
+        $ git push origin --delete old-name     # delete old branch from remote
+
+57. Renaming a local repository directory
+    Description:  Rename your repository directory using operating system commands. Git will continue to work.
+    Example:      $ mv oldRepo newRepo  (Unix/macOS) or ren oldRepo newRepo (Windows)
+
+58. Renaming the remote repository (URL)
+    Description:  After renaming the repository on GitHub or another service, update the remote URL.
+    Example:
+        $ git remote set-url origin https://github.com/user/new-repo-name.git
+
+59. git clean -fd
+    Description:  Forcefully remove untracked files and directories. Use cautiously.
+    Example:      $ git clean -fd
+
+60. git pull --rebase origin [branch]
+    Description:  Fetch from the specified remote and rebase on top of that branch.
+    Example:      $ git pull --rebase origin main
+
+==============================
+END OF DOCUMENT
+==============================
