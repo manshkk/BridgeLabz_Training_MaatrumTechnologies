@@ -304,3 +304,6226 @@ Resource management – Compile‑time events occur on the developer’s machine
 Conclusion
 
 Compile time and runtime represent different phases in a program’s lifecycle. During compile time, the source code is translated into machine‑readable form and checked for syntax and type errors. Runtime starts once the program is executing; it is when the code actually performs tasks and interacts with memory and the environment. Recognizing the distinction helps developers anticipate and resolve errors, optimize performance and design efficient programs.
+
+What is .NET
+.NET is a developer platform made up of and tools, programming languages, 
+libraries for building many different types of applications.
+
+What is .NET Framework?
+.NET Framework is the execution and development environment for 
+.NET applications. It supports running websites, services, desktop apps, 
+and more on Windows.
+
+Evolution / History of .NET
+The evolution/history of .NET refers to how Microsoft’s .NET platform has developed over time—from a Windows-only framework to a modern, cross-platform ecosystem.
+🔹 1. Early Beginning (.NET Framework – 2002)
+Introduced by Microsoft in 2002
+Known as .NET Framework 1.0
+Designed mainly for Windows applications
+Key features:
+CLR (Common Language Runtime) for execution
+FCL (Framework Class Library)
+Support for languages like C#, VB.NET
+Used for:
+Windows Forms apps
+Web apps using ASP.NET
+🔹 2. Growth Phase (.NET Framework 2.0 – 4.8)
+Released multiple versions from 2005 to 2019
+Major improvements:
+Generics (2.0)
+LINQ (3.5)
+WPF & WCF (3.0)
+ASP.NET MVC (4.0)
+Became widely used for:
+Enterprise applications
+Desktop apps
+Web services
+
+3. Need for Change (Limitations)
+.NET Framework was:
+Windows-only
+Not fully open source
+Less flexible for cloud & mobile
+Developers demanded:
+Cross-platform support
+Lightweight frameworks
+
+🔹 4. Introduction of .NET Core (2016)
+Launched in 2016
+Features:
+Cross-platform (Windows, Linux, macOS)
+Open-source
+High performance
+Modular design
+Key components:
+ASP.NET Core
+.NET CLI
+Widely used for:
+Cloud apps
+Microservices
+APIs
+🔹 5. Unified Platform (.NET 5 – Present)
+Started with .NET 5 (2020)
+Continued as .NET 6, 7, 8…
+Unified all versions into one platform
+Key Features:
+Single platform for:
+Web, Desktop, Mobile, Cloud, IoT
+New technologies:
+Blazor (web apps using C#)
+MAUI (cross-platform UI)
+Better performance and scalability
+
+🔹 6. Current State (.NET 8 and beyond)
+Latest versions focus on:
+High performance
+Cloud-native development
+AI integration
+Strong support for:
+Microservices
+Containers (Docker, Kubernetes)
+Modern web apps
+
+✅ Summary
+2002: .NET Framework (Windows-only)
+2005–2019: Improved features (WPF, LINQ, MVC)
+2016: .NET Core (cross-platform, open source)
+2020+: Unified .NET (modern, fast, flexible)
+
+What is a Console Application
+A Console Application is a type of program that runs in a command-line interface (CLI) (a text-based window) where users interact with the program by typing input and reading output as text.
+A console application is a software program that:
+
+Uses text input and output
+Runs inside a console/terminal window
+Does not have a graphical user interface (GUI)
+🔹 How it Works
+Program starts in a console window
+Displays output using commands like print() or Console.WriteLine()
+Accepts user input using input() or Console.ReadLine()
+Processes data and shows result
+
+📌 What is C#?
+
+C# (C-Sharp) is a modern, object-oriented programming language developed by Microsoft as part of the .NET platform.
+
+It is used to build a wide range of applications such as:
+
+Windows applications
+Web applications
+Mobile apps
+Games
+Cloud-based services
+🔹 Key Features of C#
+✔ Object-Oriented (uses classes and objects)
+✔ Type-Safe (reduces errors during execution)
+✔ Simple & Easy to Learn
+✔ Rich Library Support (.NET libraries)
+✔ Cross-Platform (with modern .NET)
+✔ Secure and Robust
+🔹 Basic Structure of a C# Program
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Hello, World!");
+    }
+}
+🔍 Explanation:
+using System; → Imports built-in library
+class Program → Defines a class
+Main() → Entry point of program
+Console.WriteLine() → Prints output
+🔹 Applications of C#
+💻 Desktop apps (Windows Forms, WPF)
+🌐 Web apps using ASP.NET
+📱 Mobile apps (Xamarin / .NET MAUI)
+🎮 Game development with Unity
+☁ Cloud services and APIs
+🔹 Advantages of C#
+Easy to learn for beginners
+Strong support from Microsoft
+Large developer community
+High performance with modern .NET
+🔹 Summary
+
+C# is a powerful, versatile, and easy-to-learn programming language widely used for building modern applications across different platforms using the .NET ecosystem.
+
+.NET Framework vs .NET Core vs .NET 5+
+| Feature            | .NET Framework   | .NET Core      | .NET 5+ (Modern .NET) |
+| ------------------ | ---------------- | -------------- | --------------------- |
+| Release Year       | 2002             | 2016           | 2020+                 |
+| Platform Support   | Windows only     | Cross-platform | Cross-platform        |
+| Open Source        | No (mostly)      | Yes            | Yes                   |
+| Performance        | Moderate         | High           | Very High             |
+| Development Status | Maintenance only | Replaced       | Active development    |
+| Best For           | Legacy apps      | Cloud & APIs   | All modern apps       |
+
+
+CLI (Common Language Infrastructure)
+🔹 CLI (Common Language Infrastructure)
+📌 What is CLI?
+
+CLI (Common Language Infrastructure) is a standard specification that defines how different programming languages and programs can run on a common platform.
+
+It was standardized by ECMA International and is the foundation of the .NET ecosystem created by Microsoft.
+
+👉 In simple words:
+CLI allows programs written in different languages (like C#, VB.NET) to run together and share code.
+
+🔹 Main Components of CLI
+1. CLR (Common Language Runtime)
+Executes the program
+Handles memory management, security, and exception handling
+2. CTS (Common Type System)
+Defines how data types are declared and used
+Ensures all languages use compatible data types
+3. CLS (Common Language Specification)
+Rules that languages must follow to be compatible
+Ensures code written in one language can be used in another
+4. MSIL (Microsoft Intermediate Language)
+Intermediate code generated after compilation
+Platform-independent code executed by CLR
+🔹 How CLI Works
+Source code (C#, VB.NET) is written
+Compiler converts it into MSIL (Intermediate Language)
+CLR converts MSIL into machine code (JIT compilation)
+Program runs on any platform supporting CLI
+🔹 Example
+C# Code:
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Hello CLI");
+    }
+}
+🔍 What Happens:
+C# code is compiled into MSIL
+CLR executes the MSIL
+Output is displayed:
+Hello CLI
+🔹 Real-Life Analogy
+
+Think of CLI as a translator system:
+
+Different languages (C#, VB.NET) → different speakers
+CLI → common language translator
+CLR → person who understands and executes instructions
+🔹 Advantages of CLI
+✔ Language interoperability
+✔ Platform independence
+✔ Code reusability
+✔ Security and memory management
+✅ Summary
+
+CLI is a standard environment that allows multiple programming languages to work together by converting code into a common format and executing it using the CLR.
+
+CLR (Common Language Runtime)
+📌 What is CLR?
+
+CLR (Common Language Runtime) is the execution engine of the .NET platform developed by Microsoft.
+
+👉 It is responsible for running .NET programs and managing their execution.
+
+🔹 How CLR Works
+Source code (C#, VB.NET) is compiled into MSIL (Intermediate Language)
+CLR loads the MSIL code
+JIT (Just-In-Time compiler) converts MSIL into machine code
+Program is executed
+🔹 Key Functions of CLR
+1. 🧠 Memory Management
+Automatically manages memory
+Uses Garbage Collection (GC) to remove unused objects
+2. ⚙ Execution Engine
+Converts IL code to machine code using JIT
+Executes the program
+3. 🔐 Security
+Provides code access security
+Prevents unauthorized access
+4. ❗ Exception Handling
+Handles runtime errors efficiently
+Prevents program crashes
+5. 🔄 Language Interoperability
+Allows multiple languages (C#, VB.NET) to run together
+6. 🧩 Thread Management
+Handles multiple threads for better performance
+🔹 Example
+C# Program:
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Hello CLR");
+    }
+}
+🔍 What Happens:
+Code is compiled into MSIL
+CLR loads and executes it
+JIT converts it to machine code
+Output:
+Hello CLR
+🔹 Advantages of CLR
+✔ Automatic memory management
+✔ Platform independence
+✔ Improved security
+✔ Better performance with JIT
+✔ Simplified development
+🔹 Real-Life Analogy
+
+Think of CLR as a manager of a factory:
+
+Workers (code) do tasks
+Manager (CLR) ensures everything runs smoothly, safely, and efficiently
+✅ Summary
+
+CLR is the core runtime environment of .NET that executes programs, manages memory, ensures security, and provides essential services for smooth program execution.
+
+CTS (Common Type System)
+🔹 CTS (Common Type System)
+📌 What is CTS?
+
+CTS (Common Type System) is a component of the .NET platform defined by ECMA International and implemented by Microsoft.
+
+👉 It defines how data types are declared, used, and managed in .NET.
+
+👉 In simple words:
+CTS ensures that all programming languages use the same data types, making them compatible with each other.
+
+🔹 Why CTS is Important
+Enables language interoperability
+Ensures type safety
+Makes code sharing between languages possible
+
+CTS divides data types into two main categories:
+
+1. Value Types
+Store actual data directly
+Stored in stack memory
+Examples:
+int, float, char, bool
+
+👉 Example:
+
+int a = 10;
+2. Reference Types
+Store reference (address) of data
+Stored in heap memory
+Examples:
+string, object, arrays, classes
+
+👉 Example:
+
+string name = "Manish";
+🔹 How CTS Works
+All languages (C#, VB.NET, etc.) follow CTS rules
+Data types are converted into a common format
+This allows:
+Code sharing
+Cross-language communication
+🔹 Example (Language Interoperability)
+C# Code:
+public int Add(int a, int b)
+{
+    return a + b;
+}
+
+👉 This method can be used in other .NET languages because:
+
+int follows CTS rules
+All languages understand it
+🔹 Key Features of CTS
+✔ Defines all data types
+✔ Ensures type compatibility
+✔ Supports object-oriented concepts
+✔ Enables cross-language integration
+🔹 Real-Life Analogy
+
+Think of CTS as a standard measurement system:
+
+Different countries (languages)
+Same units (types like int, string)
+So everyone understands each other
+✅ Summary
+
+CTS is a type system in .NET that defines how data types are used and ensures that all languages can work together safely and efficiently.
+
+
+CLS (Common Language Specification)
+🔹 CLS (Common Language Specification)
+📌 What is CLS?
+
+CLS (Common Language Specification) is a set of rules and guidelines in the .NET platform defined by ECMA International and implemented by Microsoft.
+
+👉 It ensures that code written in one .NET language can be used by other .NET languages.
+
+🔹 Why CLS is Needed
+
+Different programming languages have different features.
+CLS defines a common subset of rules so that all languages can interoperate smoothly.
+
+👉 In simple words:
+CLS acts like a common agreement between languages.
+🔹 How CLS Works
+All .NET languages follow CTS (Common Type System)
+CLS selects a subset of CTS rules
+Only CLS-compliant features are guaranteed to work across languages
+🔹 Example
+❌ Not CLS-compliant:
+public void PrintMessage(uint num)  // unsigned int
+{
+    Console.WriteLine(num);
+}
+
+👉 uint is not supported by all .NET languages
+
+✅ CLS-compliant:
+public void PrintMessage(int num)
+{
+    Console.WriteLine(num);
+}
+
+👉 int is supported by all .NET languages
+
+🔹 Key Features of CLS
+✔ Ensures language interoperability
+✔ Defines common rules for languages
+✔ Avoids language-specific features
+✔ Promotes code reusability
+🔹 Relationship: CTS vs CLS
+CTS → Defines all data types
+CLS → Defines which types/features are safe to use across languages
+
+👉 CLS is a subset of CTS
+
+🔹 Real-Life Analogy
+
+Think of CLS as traffic rules:
+
+Different vehicles (languages)
+Same rules (CLS)
+So everyone can move safely on the same road
+✅ Summary
+
+CLS is a set of rules in .NET that ensures code written in one language can be understood and used by other languages, enabling smooth interoperability.
+
+## 🔹 JIT Compiler (Just-In-Time Compiler)
+
+### 📌 What is JIT Compiler?
+
+The **JIT (Just-In-Time) Compiler** is a component of the **CLR (Common Language Runtime)** in the .NET platform developed by Microsoft.
+
+👉 It converts **Intermediate Language (IL/MSIL)** code into **machine code** at runtime.
+
+---
+
+## 🔹 Why JIT is Needed
+
+* Programs in .NET are not directly compiled to machine code
+* They are first compiled into **IL (Intermediate Language)**
+* JIT converts this IL into **machine-specific code** just before execution
+
+---
+
+## 🔹 How JIT Works
+
+1. Source code (C#, VB.NET) → compiled into **IL code**
+2. When the program runs, CLR calls JIT
+3. JIT converts IL into **machine code**
+4. Machine code is executed by the system
+
+👉 Compilation happens **only when needed (at runtime)**
+
+---
+
+## 🔹 Types of JIT Compiler
+
+### 1. **Normal JIT**
+
+* Compiles methods **one at a time** when they are called
+* Most commonly used
+
+### 2. **Eager JIT**
+
+* Compiles all methods **at program startup**
+* Faster execution later but slower startup
+
+### 3. **Pre-JIT (NGen)**
+
+* Compiles entire program into native code **before execution**
+* Stored on disk
+* Improves startup performance
+
+---
+
+## 🔹 Example
+
+### C# Code:
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Hello JIT");
+    }
+}
+```
+
+### 🔍 What Happens:
+
+* Code → IL (Intermediate Language)
+* JIT → converts IL → machine code
+* Output:
+
+```
+Hello JIT
+```
+
+---
+
+## 🔹 Advantages of JIT
+
+* ✔ Platform independence (same IL runs anywhere)
+* ✔ Optimized performance at runtime
+* ✔ Only required code is compiled
+* ✔ Better memory usage
+
+---
+
+## 🔹 Disadvantages of JIT
+
+* ❌ Slight delay during first execution
+* ❌ Runtime overhead
+
+---
+
+## 🔹 Real-Life Analogy
+
+Think of JIT like a **live translator**:
+
+* You speak (IL code)
+* Translator converts instantly (JIT)
+* Listener understands (machine executes)
+
+---
+
+## ✅ Summary
+
+The **JIT Compiler** converts **IL code into machine code at runtime**, enabling .NET programs to run efficiently on different systems while maintaining platform independence.
+
+---
+
+Q ) Components of CLR JIT Compiler
+## 🔹 Components of CLR
+
+**CLR (Common Language Runtime)** is the execution engine of .NET developed by Microsoft. It provides various services to run applications smoothly.
+
+### 📌 Main Components of CLR
+
+1. **JIT Compiler (Just-In-Time)**
+
+   * Converts IL code into machine code at runtime
+
+2. **Garbage Collector (GC)**
+
+   * Automatically manages memory
+   * Removes unused objects
+
+3. **Exception Handler**
+
+   * Handles runtime errors efficiently
+
+4. **Type Checker**
+
+   * Ensures type safety
+   * Verifies valid data usage
+
+5. **Security Engine**
+
+   * Provides code access security
+   * Prevents unauthorized operations
+
+6. **Thread Manager**
+
+   * Manages execution of multiple threads
+
+7. **Class Loader**
+
+   * Loads classes and assemblies into memory
+
+---
+
+## 🔹 JIT Compiler (Just-In-Time Compiler)
+
+### 📌 What is JIT?
+
+The **JIT Compiler** is a key component of CLR that **converts Intermediate Language (IL/MSIL) into machine code** during program execution.
+
+---
+
+### 🔹 Working of JIT
+
+1. Source code → compiled into **IL (Intermediate Language)**
+2. CLR loads the IL code
+3. JIT converts IL → **machine code**
+4. Machine code is executed
+
+---
+
+### 🔹 Types of JIT
+
+* **Normal JIT** → Compiles methods when called
+* **Eager JIT** → Compiles all code at startup
+* **Pre-JIT (NGen)** → Compiles code before execution
+
+---
+
+### 🔹 Example
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Hello JIT");
+    }
+}
+```
+
+👉 The code is first converted to IL, then JIT converts it to machine code at runtime.
+
+---
+
+### 🔹 Advantages of JIT
+
+* ✔ Platform independence
+* ✔ Better performance through optimization
+* ✔ Efficient memory usage
+
+---
+
+## ✅ Summary
+
+* CLR contains multiple components like GC, JIT, security, and thread manager
+* **JIT Compiler** is responsible for converting IL code into machine code at runtime
+* It plays a crucial role in executing .NET applications efficiently
+
+---
+
+Q)Garbage Collector
+## 🔹 Garbage Collector (GC)
+
+### 📌 What is Garbage Collector?
+
+The **Garbage Collector (GC)** is a component of the **CLR (Common Language Runtime)** in the .NET platform developed by Microsoft.
+
+👉 It automatically **manages memory** by removing objects that are no longer in use.
+
+---
+
+## 🔹 Why Garbage Collector is Needed
+
+* In many languages, programmers must manually free memory
+* This can lead to:
+
+  * Memory leaks
+  * Program crashes
+
+👉 GC solves this by **automatically cleaning unused memory**
+
+---
+
+## 🔹 How Garbage Collector Works
+
+1. Objects are created and stored in **heap memory**
+2. GC tracks which objects are still in use
+3. Unused objects are marked as **garbage**
+4. GC removes them and frees memory
+
+---
+
+## 🔹 Generations in GC
+
+The GC uses a **generation-based system**:
+
+* **Generation 0 (Gen 0)**
+
+  * Newly created objects
+  * Collected frequently
+
+* **Generation 1 (Gen 1)**
+
+  * Temporary objects
+  * Acts as a buffer
+
+* **Generation 2 (Gen 2)**
+
+  * Long-lived objects
+  * Collected less frequently
+
+---
+
+## 🔹 Example
+
+### C# Code:
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        object obj = new object(); // object created
+        obj = null; // object no longer used
+    }
+}
+```
+
+👉 When `obj` is no longer referenced, GC will remove it automatically.
+
+---
+
+## 🔹 Features of Garbage Collector
+
+* ✔ Automatic memory management
+* ✔ Prevents memory leaks
+* ✔ Improves application performance
+* ✔ Handles object allocation and deallocation
+
+---
+
+## 🔹 Advantages
+
+* No need for manual memory cleanup
+* Reduces programming errors
+* Efficient memory utilization
+
+---
+
+## 🔹 Disadvantages
+
+* ❌ Slight performance overhead
+* ❌ Less control over memory timing
+
+---
+
+## 🔹 Real-Life Analogy
+
+Think of GC like a **cleaning staff in a hotel**:
+
+* Guests (objects) use rooms (memory)
+* When guests leave (unused objects),
+* Staff (GC) cleans and frees the room
+
+---
+
+## ✅ Summary
+
+The **Garbage Collector** is a CLR component that **automatically frees unused memory**, helping programs run efficiently and safely without manual memory management.
+
+---
+
+Q) Exception Handling
+## 🔹 Exception Handling (in C# / .NET)
+
+### 📌 What is Exception Handling?
+
+**Exception Handling** is a mechanism used to **handle runtime errors** so that a program does not crash abruptly.
+
+In .NET (developed by Microsoft), it allows you to **detect, catch, and manage errors gracefully**.
+
+---
+
+## 🔹 What is an Exception?
+
+An **exception** is an error that occurs during program execution.
+
+👉 Examples:
+
+* Dividing by zero
+* Accessing invalid memory
+* File not found
+
+---
+
+## 🔹 Keywords Used in Exception Handling
+
+### 1. **try**
+
+* Contains code that may cause an error
+
+### 2. **catch**
+
+* Handles the exception
+
+### 3. **finally**
+
+* Executes always (whether error occurs or not)
+
+### 4. **throw**
+
+* Used to manually generate an exception
+
+---
+
+## 🔹 Basic Syntax
+
+```csharp
+try
+{
+    // Code that may cause exception
+}
+catch (Exception e)
+{
+    // Handle exception
+}
+finally
+{
+    // Always executes
+}
+```
+
+---
+
+## 🔹 Example
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        try
+        {
+            int a = 10;
+            int b = 0;
+            int result = a / b; // error
+        }
+        catch (DivideByZeroException e)
+        {
+            Console.WriteLine("Cannot divide by zero");
+        }
+        finally
+        {
+            Console.WriteLine("Program ended");
+        }
+    }
+}
+```
+
+### 🔍 Output:
+
+```
+Cannot divide by zero
+Program ended
+```
+
+---
+
+## 🔹 Types of Exceptions
+
+* **System Exceptions** → Generated by runtime
+
+  * Example: `DivideByZeroException`, `NullReferenceException`
+
+* **User-defined Exceptions** → Created by programmer
+
+---
+
+## 🔹 Advantages of Exception Handling
+
+* ✔ Prevents program crash
+* ✔ Improves program reliability
+* ✔ Makes debugging easier
+* ✔ Allows graceful error handling
+
+---
+
+## 🔹 Real-Life Analogy
+
+Think of exception handling like a **safety net**:
+
+* If something goes wrong (error),
+* The safety net catches it and prevents damage
+
+---
+
+## ✅ Summary
+
+Exception handling is used to **handle runtime errors using try, catch, and finally**, ensuring smooth and safe execution of programs.
+
+---
+
+Q) Memory Management
+## 🔹 Memory Management (in .NET)
+
+### 📌 What is Memory Management?
+
+**Memory Management** is the process of **allocating, using, and freeing memory** in a program.
+
+In .NET, memory management is handled automatically by the **CLR (Common Language Runtime)** developed by Microsoft.
+
+---
+
+## 🔹 Why Memory Management is Important
+
+* Prevents **memory leaks**
+* Improves **performance**
+* Ensures efficient use of system memory
+
+---
+
+## 🔹 Types of Memory in .NET
+
+### 1. **Stack Memory**
+
+* Stores **value types** and method calls
+* Fast and automatically managed
+* Example: `int`, `float`, `char`
+
+👉 Example:
+
+```csharp
+int x = 10;
+```
+
+---
+
+### 2. **Heap Memory**
+
+* Stores **reference types** (objects)
+* Managed by **Garbage Collector (GC)**
+* Example: `string`, objects, arrays
+
+👉 Example:
+
+```csharp
+string name = "Manish";
+```
+
+---
+
+## 🔹 How Memory Management Works
+
+1. Memory is allocated when objects are created
+2. Stack handles temporary data (method calls, variables)
+3. Heap stores objects
+4. **Garbage Collector (GC)** removes unused objects
+5. Memory is freed and reused
+
+---
+
+## 🔹 Role of Garbage Collector
+
+* Automatically detects unused objects
+* Frees memory from heap
+* Works in generations (Gen 0, 1, 2)
+* Improves performance by optimizing cleanup
+
+---
+
+## 🔹 Example
+
+```csharp id="8gqxq2"
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int a = 5;              // Stack memory
+        string name = "John";  // Heap memory
+        
+        name = null;           // Object becomes eligible for GC
+    }
+}
+```
+
+---
+
+## 🔹 Advantages of .NET Memory Management
+
+* ✔ Automatic memory handling
+* ✔ Reduces programmer effort
+* ✔ Prevents memory leaks
+* ✔ Improves application stability
+
+---
+
+## 🔹 Disadvantages
+
+* ❌ Less control over memory
+* ❌ GC may cause slight performance delay
+
+---
+
+## 🔹 Real-Life Analogy
+
+Think of memory like a **workspace**:
+
+* Stack → small desk for quick tasks
+* Heap → large storage area
+* GC → cleaner who removes unused items
+
+---
+
+## ✅ Summary
+
+Memory management in .NET is handled by CLR using **stack and heap memory**, with the **Garbage Collector** automatically freeing unused memory, making programs efficient and safe.
+
+---
+
+Q) Security
+## 🔹 Security (in .NET / CLR)
+
+### 📌 What is Security?
+
+**Security in .NET** refers to the mechanisms that **protect applications and data** from unauthorized access and harmful operations.
+
+It is managed by the **CLR (Common Language Runtime)** of the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Why Security is Important
+
+* Protects sensitive data
+* Prevents unauthorized access
+* Ensures safe execution of programs
+* Avoids malicious code attacks
+
+---
+
+## 🔹 Types of Security in .NET
+
+### 1. **Code Access Security (CAS)**
+
+* Controls what a program is allowed to do
+* Based on permissions (e.g., file access, network access)
+
+👉 Example:
+A program may be allowed to read files but not delete them
+
+---
+
+### 2. **Role-Based Security**
+
+* Controls access based on user roles
+* Example roles: Admin, User, Guest
+
+👉 Example:
+Only admin can delete data, normal user cannot
+
+---
+
+### 3. **Authentication**
+
+* Verifies **who the user is**
+* Example: username and password
+
+---
+
+### 4. **Authorization**
+
+* Determines **what the user can do** after login
+
+---
+
+### 5. **Encryption**
+
+* Protects data by converting it into unreadable form
+* Only authorized users can decrypt it
+
+---
+
+## 🔹 How CLR Provides Security
+
+* Verifies code before execution
+* Restricts unsafe operations
+* Runs code in a controlled environment
+* Prevents direct memory access
+
+---
+
+## 🔹 Example (Simple Role Check in C#)
+
+```csharp
+string role = "User";
+
+if (role == "Admin")
+{
+    Console.WriteLine("Access granted");
+}
+else
+{
+    Console.WriteLine("Access denied");
+}
+```
+
+---
+
+## 🔹 Features of .NET Security
+
+* ✔ Secure code execution
+* ✔ Permission-based access
+* ✔ Protection against unauthorized operations
+* ✔ Safe memory handling
+
+---
+
+## 🔹 Advantages
+
+* Reduces security risks
+* Ensures data protection
+* Provides controlled access
+* Improves application reliability
+
+---
+
+## 🔹 Real-Life Analogy
+
+Think of security like a **security system in a building**:
+
+* Authentication → ID check at entry
+* Authorization → Access to specific rooms
+* Encryption → Locked safe for valuables
+
+---
+
+## ✅ Summary
+
+Security in .NET ensures **safe execution, data protection, and controlled access** using mechanisms like authentication, authorization, and code permissions managed by the CLR.
+
+---
+
+Q) Additional Concepts
+Managed Code vs Unmanaged Code
+
+## 🔹 Managed Code vs Unmanaged Code
+
+### 📌 What is Managed Code?
+
+**Managed code** is code that runs under the control of the **CLR (Common Language Runtime)** in the .NET platform developed by Microsoft.
+
+👉 The CLR provides services like:
+
+* Memory management
+* Garbage collection
+* Security
+* Exception handling
+
+### ✅ Example (Managed Code – C#)
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Hello Managed Code");
+    }
+}
+```
+
+---
+
+### 📌 What is Unmanaged Code?
+
+**Unmanaged code** is code that runs **directly on the operating system** without CLR support.
+
+👉 The programmer is responsible for:
+
+* Memory management
+* Security
+* Resource handling
+
+### ✅ Example (Unmanaged Code – C++)
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cout << "Hello Unmanaged Code";
+    return 0;
+}
+```
+
+---
+
+## 🔹 Key Differences
+
+| Feature           | Managed Code                  | Unmanaged Code      |
+| ----------------- | ----------------------------- | ------------------- |
+| Execution         | Runs under CLR                | Runs directly on OS |
+| Memory Management | Automatic (Garbage Collector) | Manual              |
+| Security          | Provided by CLR               | Not automatic       |
+| Performance       | Slightly slower               | Faster              |
+| Examples          | C#, VB.NET                    | C, C++              |
+| Safety            | More secure                   | Less secure         |
+
+---
+
+## 🔹 Advantages
+
+### Managed Code
+
+* ✔ Automatic memory management
+* ✔ Better security
+* ✔ Easier development
+
+### Unmanaged Code
+
+* ✔ High performance
+* ✔ More control over system resources
+
+---
+
+## 🔹 When to Use
+
+* 👉 **Managed Code** → Most applications (web, desktop, cloud)
+* 👉 **Unmanaged Code** → System-level programming, device drivers
+
+---
+
+## 🔹 Real-Life Analogy
+
+* Managed Code → Like driving with **automatic car (less effort, safer)**
+* Unmanaged Code → Like driving a **manual car (more control, more responsibility)**
+
+---
+
+## ✅ Summary
+
+* **Managed Code** runs under CLR with automatic services
+* **Unmanaged Code** runs directly on the OS with manual control
+* Managed code is easier and safer, while unmanaged code gives more control and performance
+
+---
+Q) Advantages of CLR
+## 🔹 Advantages of CLR (Common Language Runtime)
+
+The **CLR (Common Language Runtime)** is the core execution engine of the .NET platform developed by Microsoft. It provides many benefits that make application development easier, safer, and more efficient.
+
+---
+
+## 🔹 Key Advantages of CLR
+
+### 1. ✔ Automatic Memory Management
+
+* CLR uses **Garbage Collection (GC)**
+* Automatically frees unused memory
+* Prevents memory leaks
+
+---
+
+### 2. ✔ Platform Independence
+
+* Code is compiled into **Intermediate Language (IL)**
+* CLR runs IL on different platforms
+* Same code can run anywhere with CLR support
+
+---
+
+### 3. ✔ Improved Security
+
+* Provides **Code Access Security**
+* Prevents unauthorized operations
+* Runs code in a controlled environment
+
+---
+
+### 4. ✔ Exception Handling
+
+* Handles runtime errors efficiently
+* Prevents application crashes
+* Improves reliability
+
+---
+
+### 5. ✔ Language Interoperability
+
+* Supports multiple languages (C#, VB.NET, etc.)
+* Enables code sharing between languages
+
+---
+
+### 6. ✔ Just-In-Time (JIT) Compilation
+
+* Converts IL into machine code at runtime
+* Optimizes performance
+
+---
+
+### 7. ✔ Simplified Development
+
+* Developers don’t need to manage memory manually
+* Reduces complexity and coding effort
+
+---
+
+### 8. ✔ Thread Management
+
+* Supports multithreading
+* Improves application performance
+
+---
+
+### 9. ✔ Type Safety
+
+* Ensures proper use of data types
+* Reduces runtime errors
+
+---
+
+## 🔹 Summary
+
+The CLR provides **automatic memory management, security, platform independence, and efficient execution**, making .NET applications **safe, reliable, and easy to develop**.
+
+---
+
+Q) Disadvantages of CLR
+## 🔹 Disadvantages of CLR (Common Language Runtime)
+
+While the **CLR (Common Language Runtime)** from Microsoft provides many benefits, it also has some limitations.
+
+---
+
+## 🔹 Key Disadvantages of CLR
+
+### 1. ❌ Performance Overhead
+
+* Uses **JIT (Just-In-Time) compilation** at runtime
+* Causes slight delay during first execution
+
+---
+
+### 2. ❌ Higher Memory Usage
+
+* CLR itself consumes memory
+* Garbage Collection may use additional resources
+
+---
+
+### 3. ❌ Less Control Over Memory
+
+* Memory is managed automatically
+* Developers cannot directly control allocation/deallocation
+
+---
+
+### 4. ❌ Garbage Collection Delays
+
+* GC may pause application execution
+* Can affect performance in real-time applications
+
+---
+
+### 5. ❌ Dependency on .NET Environment
+
+* Requires CLR/.NET runtime to execute programs
+* Applications cannot run independently without it
+
+---
+
+### 6. ❌ Not Ideal for Low-Level Programming
+
+* Limited control over hardware
+* Not suitable for:
+
+  * Device drivers
+  * System-level programming
+
+---
+
+### 7. ❌ Startup Time Slower
+
+* Due to JIT compilation and runtime loading
+* Slower than native (unmanaged) applications initially
+
+---
+
+## 🔹 Summary
+
+The CLR simplifies development but has drawbacks like **performance overhead, memory usage, and reduced low-level control**, making it less suitable for certain high-performance or system-level applications.
+
+---
+
+🔰 4. Assemblies
+
+Q) What is Assembly
+
+## 🔹 What is an Assembly (in .NET)?
+
+### 📌 Definition
+
+An **Assembly** is the **compiled output of a .NET program**.
+It is the **smallest unit of deployment, versioning, and execution** in the .NET platform developed by Microsoft.
+
+👉 In simple words:
+An assembly is the **final file created after compiling your code**, which the CLR executes.
+
+---
+
+## 🔹 Types of Assemblies
+
+* **.exe (Executable)** → Runs as an application
+* **.dll (Dynamic Link Library)** → Used as a library by other programs
+
+---
+
+## 🔹 Contents of an Assembly
+
+An assembly contains:
+
+1. **Manifest**
+
+   * Metadata about the assembly
+   * Version, name, culture
+
+2. **MSIL (Intermediate Language)**
+
+   * Code generated after compilation
+
+3. **Metadata**
+
+   * Information about types (classes, methods, etc.)
+
+4. **Resources**
+
+   * Images, strings, files used by the program
+
+---
+
+## 🔹 How Assembly Works
+
+1. Write code in C#
+2. Compile code → Assembly (.exe / .dll)
+3. Assembly contains IL code
+4. CLR loads assembly
+5. JIT compiles IL → machine code
+6. Program runs
+
+---
+
+## 🔹 Example
+
+### C# Code:
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Hello Assembly");
+    }
+}
+```
+
+👉 After compilation, this creates an **assembly file (.exe)** which is executed by CLR.
+
+---
+
+## 🔹 Types of Assemblies
+
+### 1. **Private Assembly**
+
+* Used by a single application
+* Stored in application folder
+
+### 2. **Shared Assembly**
+
+* Used by multiple applications
+* Stored in **GAC (Global Assembly Cache)**
+
+---
+
+## 🔹 Advantages of Assemblies
+
+* ✔ Easy deployment
+* ✔ Version control
+* ✔ Reusability
+* ✔ Security and isolation
+
+---
+
+## 🔹 Real-Life Analogy
+
+Think of an assembly like a **packaged product**:
+
+* Code → raw materials
+* Assembly → finished product ready to use
+
+---
+
+## ✅ Summary
+
+An **assembly** is the **compiled unit of a .NET application** that contains IL code, metadata, and resources, and is executed by the CLR.
+
+---
+Q) Types of Assemblies
+## 🔹 Types of Assemblies (in .NET)
+
+In the .NET platform developed by Microsoft, assemblies are classified based on how they are used and deployed.
+
+---
+
+## 🔹 1. Private Assembly
+
+### 📌 Definition
+
+A **private assembly** is used by **only one application**.
+
+### 🔹 Features:
+
+* Stored in the application’s folder
+* Not shared with other applications
+* Easy to deploy (no special configuration needed)
+
+### 🔹 Example:
+
+* A `.dll` file used only inside one project
+
+---
+
+## 🔹 2. Shared Assembly (Public Assembly)
+
+### 📌 Definition
+
+A **shared assembly** is used by **multiple applications**.
+
+### 🔹 Features:
+
+* Stored in **GAC (Global Assembly Cache)**
+* Must have a **strong name** (unique identity)
+* Can be reused across different applications
+
+### 🔹 Example:
+
+* Common libraries used by many programs
+
+---
+
+## 🔹 3. Satellite Assembly
+
+### 📌 Definition
+
+A **satellite assembly** is used for **localization (multi-language support)**.
+
+### 🔹 Features:
+
+* Contains **resources only** (no code)
+* Used for different languages (e.g., English, French, Tamil)
+* Helps in building global applications
+
+### 🔹 Example:
+
+* Resource files for different regions
+
+---
+
+## 🔹 4. Dynamic Assembly
+
+### 📌 Definition
+
+A **dynamic assembly** is created **at runtime**.
+
+### 🔹 Features:
+
+* Generated programmatically
+* Not stored permanently (optional)
+* Useful for advanced scenarios
+
+---
+
+## 🔹 Summary Table
+
+| Type               | Usage                    | Storage Location        |
+| ------------------ | ------------------------ | ----------------------- |
+| Private Assembly   | Single application       | Application folder      |
+| Shared Assembly    | Multiple applications    | GAC                     |
+| Satellite Assembly | Localization (languages) | Separate resource files |
+| Dynamic Assembly   | Runtime-generated        | Memory / disk           |
+
+---
+
+## ✅ Summary
+
+* **Private Assembly** → Used by one application
+* **Shared Assembly** → Used by many applications
+* **Satellite Assembly** → Used for localization
+* **Dynamic Assembly** → Created at runtime
+
+---
+Q) Difference between EXE and DLL
+## 🔹 Difference Between EXE and DLL (in .NET)
+
+Both **EXE** and **DLL** are types of assemblies in the .NET platform developed by Microsoft, but they serve different purposes.
+
+---
+
+## 🔹 What is EXE?
+
+* **EXE (Executable File)** is a program that can **run directly**
+* Contains a **Main() method (entry point)**
+* Used to start an application
+
+👉 Example: A console app or Windows app
+
+---
+
+## 🔹 What is DLL?
+
+* **DLL (Dynamic Link Library)** is a file that contains **reusable code**
+* Cannot run directly
+* Used by other programs
+
+👉 Example: Library functions shared across apps
+
+---
+
+## 🔹 Key Differences
+
+| Feature        | EXE (Executable)    | DLL (Library)             |
+| -------------- | ------------------- | ------------------------- |
+| Execution      | Runs directly       | Cannot run directly       |
+| Entry Point    | Has `Main()` method | No entry point            |
+| Purpose        | Start application   | Provide reusable code     |
+| Usage          | Standalone program  | Used by EXE or other DLLs |
+| Reusability    | Limited             | High                      |
+| File Extension | `.exe`              | `.dll`                    |
+
+---
+
+## 🔹 Example
+
+### EXE Example (C#)
+
+```csharp id="1m5l9k"
+class Program
+{
+    static void Main()
+    {
+        System.Console.WriteLine("This is EXE");
+    }
+}
+```
+
+---
+
+### DLL Example (C#)
+
+```csharp id="9m7g2a"
+public class Calculator
+{
+    public int Add(int a, int b)
+    {
+        return a + b;
+    }
+}
+```
+
+👉 This DLL can be used by multiple EXE programs.
+
+---
+
+## 🔹 Real-Life Analogy
+
+* **EXE** → Like a **TV remote (starts the action)**
+* **DLL** → Like **batteries (support the remote but don’t work alone)**
+
+---
+
+## ✅ Summary
+
+* **EXE** is a **standalone executable program**
+* **DLL** is a **library used by other programs**
+* EXE runs directly, while DLL supports code reuse
+
+---
+
+Q) Assembly Structure
+## 🔹 Assembly Structure (in .NET)
+
+### 📌 What is Assembly Structure?
+
+The **assembly structure** refers to the **internal components contained inside an assembly (.exe or .dll)** in the .NET platform developed by Microsoft.
+
+👉 It defines how a compiled program is organized and stored.
+
+---
+
+## 🔹 Main Components of an Assembly
+
+### 1. **Manifest**
+
+* The **core part of the assembly**
+* Contains:
+
+  * Assembly name
+  * Version information
+  * Culture details
+  * List of files in the assembly
+* Used for **identity and version control**
+
+---
+
+### 2. **MSIL (Microsoft Intermediate Language)**
+
+* The **compiled code** from source program
+* Platform-independent
+* Executed by CLR after JIT compilation
+
+---
+
+### 3. **Metadata**
+
+* Stores information about:
+
+  * Classes
+  * Methods
+  * Properties
+  * Data types
+* Helps CLR understand program structure
+
+---
+
+### 4. **Resources**
+
+* Contains non-code data such as:
+
+  * Images
+  * Strings
+  * Configuration files
+* Used in applications (especially UI and localization)
+
+---
+
+### 5. **Type Information**
+
+* Defines all types (classes, interfaces, etc.)
+* Stored within metadata
+
+---
+
+## 🔹 How It Works
+
+1. Source code is written in C#
+2. Compiler converts it into **MSIL + Metadata**
+3. Manifest is added
+4. All components are packaged into a single assembly file
+5. CLR loads and executes it
+
+---
+
+## 🔹 Summary
+
+An assembly is made up of **Manifest, MSIL, Metadata, and Resources**, which together form a **complete executable unit** in .NET.
+
+---
+🔰 5. C# Program Structure
+
+Q) Basic Structure of a C# Program
+
+## 🔹 Basic Structure of a C# Program
+
+### 📌 Introduction
+
+A **C# program** follows a specific structure that defines how the program is written and executed in the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Basic Example
+
+```csharp
+using System;
+
+namespace MyApplication
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
+        }
+    }
+}
+```
+
+---
+
+## 🔹 Explanation of Each Part
+
+### 1. **using System;**
+
+* Imports the **System namespace**
+* Provides basic functionalities like input/output
+
+---
+
+### 2. **namespace MyApplication**
+
+* Used to **organize code**
+* Avoids name conflicts
+
+---
+
+### 3. **class Program**
+
+* Defines a **class**
+* C# is an **object-oriented language**, so everything is inside a class
+
+---
+
+### 4. **Main Method**
+
+```csharp
+static void Main(string[] args)
+```
+
+* Entry point of the program
+* Execution starts from here
+
+---
+
+### 5. **Console.WriteLine()**
+
+* Displays output on the console
+* Used for printing messages
+
+---
+
+## 🔹 Execution Flow
+
+1. Program starts from `Main()`
+2. Statements are executed one by one
+3. Output is displayed on the console
+
+---
+
+## 🔹 Key Points
+
+* Every C# program must have a **Main() method**
+* Code is organized using **namespaces and classes**
+* Uses **.NET libraries** for functionality
+
+---
+
+## 🔹 Minimal Program (Short Form)
+
+```csharp
+Console.WriteLine("Hello World");
+```
+
+👉 Supported in modern C# versions (top-level statements)
+
+---
+
+## ✅ Summary
+
+The basic structure of a C# program includes **using directive, namespace, class, Main method, and statements**, which together define how the program runs.
+
+---
+
+
+
+Q) Namespace
+
+## 🔹 Namespace (in C#)
+
+### 📌 What is a Namespace?
+
+A **namespace** in C# is a way to **organize code into groups** and avoid name conflicts.
+It is a container that holds **classes, interfaces, structs, and other namespaces**.
+
+C# namespaces are part of the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Why Namespace is Used
+
+* Avoids **name conflicts**
+* Organizes large projects
+* Improves code readability
+* Helps reuse code
+
+---
+
+## 🔹 Syntax
+
+```csharp
+namespace MyApplication
+{
+    class Program
+    {
+        static void Main()
+        {
+            Console.WriteLine("Hello Namespace");
+        }
+    }
+}
+```
+
+---
+
+## 🔹 Example
+
+### Creating a Namespace
+
+```csharp
+namespace MathOperations
+{
+    class Calculator
+    {
+        public int Add(int a, int b)
+        {
+            return a + b;
+        }
+    }
+}
+```
+
+---
+
+### Using a Namespace
+
+```csharp
+using MathOperations;
+
+class Program
+{
+    static void Main()
+    {
+        Calculator obj = new Calculator();
+        Console.WriteLine(obj.Add(5, 3));
+    }
+}
+```
+
+---
+
+## 🔹 Types of Namespace
+
+### 1. **Predefined Namespace**
+
+* Provided by .NET
+* Example: `System`, `System.IO`, `System.Collections`
+
+---
+
+### 2. **User-Defined Namespace**
+
+* Created by programmer
+* Used to organize custom code
+
+---
+
+## 🔹 Key Points
+
+* Namespaces can be **nested**
+* Same class names can exist in different namespaces
+* Access using `using` keyword or full name
+
+---
+
+## 🔹 Real-Life Analogy
+
+Think of a namespace like **folders in a computer**:
+
+* Files (classes) are stored inside folders (namespaces)
+* Helps keep things organized and avoids confusion
+
+---
+
+## ✅ Summary
+
+A **namespace** is a container used to **organize code and avoid naming conflicts**, making programs easier to manage and understand.
+
+---
+
+
+
+Q) Class
+
+## 🔹 Class (in C#)
+
+### 📌 What is a Class?
+
+A **class** is a **blueprint or template** used to create objects in C#.
+It defines **properties (data)** and **methods (functions)** that an object will have.
+
+C# is an object-oriented language in the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Basic Syntax
+
+```csharp
+class ClassName
+{
+    // Fields (variables)
+    // Methods (functions)
+}
+```
+
+---
+
+## 🔹 Example
+
+```csharp
+using System;
+
+class Student
+{
+    // Field (data)
+    public string name;
+
+    // Method (behavior)
+    public void Display()
+    {
+        Console.WriteLine("Student Name: " + name);
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Student s = new Student(); // object creation
+        s.name = "Manish";
+        s.Display();
+    }
+}
+```
+
+---
+
+## 🔹 Key Components of a Class
+
+### 1. **Fields (Variables)**
+
+* Store data
+* Example: `name`, `age`
+
+### 2. **Methods**
+
+* Define behavior
+* Example: `Display()`
+
+### 3. **Constructors**
+
+* Special methods used to initialize objects
+
+### 4. **Properties**
+
+* Provide controlled access to data
+
+---
+
+## 🔹 Object and Class Relationship
+
+* **Class** → Blueprint
+* **Object** → Instance of class
+
+👉 Example:
+
+* Class = Car design
+* Object = Actual car
+
+---
+
+## 🔹 Features of Class
+
+* ✔ Supports **Encapsulation**
+* ✔ Enables **Code Reusability**
+* ✔ Helps in **Modular Programming**
+
+---
+
+## 🔹 Types of Classes (Basic)
+
+* Simple Class
+* Abstract Class
+* Static Class
+* Sealed Class
+
+---
+
+## 🔹 Summary
+
+A **class** is a **fundamental building block in C#** that defines data and behavior, and is used to create objects in object-oriented programming.
+
+---
+
+
+
+Q) Main Method
+
+## 🔹 Main Method (in C#)
+
+### 📌 What is Main Method?
+
+The **Main method** is the **entry point of a C# program**.
+👉 Execution of any C# program **starts from the Main() method**.
+
+It is a part of the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Basic Syntax
+
+```csharp
+static void Main(string[] args)
+{
+    // Program execution starts here
+}
+```
+
+---
+
+## 🔹 Example
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello, Main Method!");
+    }
+}
+```
+
+👉 Output:
+
+```
+Hello, Main Method!
+```
+
+---
+
+## 🔹 Key Features of Main Method
+
+### 1. **Entry Point**
+
+* Program starts execution from `Main()`
+
+### 2. **Static Method**
+
+* Declared as `static`
+* Can run without creating an object
+
+### 3. **Return Type**
+
+* Usually `void` (no return value)
+* Can also return `int`
+
+---
+
+## 🔹 Types of Main Method
+
+### 1. Without Arguments
+
+```csharp
+static void Main()
+{
+}
+```
+
+---
+
+### 2. With Arguments
+
+```csharp
+static void Main(string[] args)
+{
+}
+```
+
+👉 Used to accept command-line inputs
+
+---
+
+### 3. Returning Value
+
+```csharp
+static int Main()
+{
+    return 0;
+}
+```
+
+---
+
+## 🔹 Execution Flow
+
+1. Program starts
+2. CLR calls `Main()` method
+3. Statements inside `Main()` are executed
+4. Program ends
+
+---
+
+## 🔹 Important Points
+
+* Only **one Main method** per program
+* Must be inside a **class**
+* Can be overloaded but only one is used as entry point
+
+---
+
+## 🔹 Summary
+
+The **Main method** is the **starting point of a C# program**, where execution begins and program logic is executed.
+
+---
+
+🔰 6. Data Types
+
+Q) Value Types vs Reference Types
+
+## 🔹 Value Types vs Reference Types (in C#)
+
+### 📌 Introduction
+
+In C#, data types are mainly divided into **Value Types** and **Reference Types**.
+These are defined by the **CTS (Common Type System)** in the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Value Types
+
+### 📌 Definition
+
+**Value types** store the **actual data directly in memory**.
+
+### 🔹 Features:
+
+* Stored in **stack memory**
+* Each variable has its **own copy of data**
+* Changes do **not affect other variables**
+
+### 🔹 Examples:
+
+* `int`, `float`, `char`, `bool`, `struct`
+
+### 🔹 Example:
+
+```csharp
+int a = 10;
+int b = a;
+
+b = 20;
+
+Console.WriteLine(a); // Output: 10
+Console.WriteLine(b); // Output: 20
+```
+
+👉 `a` is not affected by changes in `b`
+
+---
+
+## 🔹 Reference Types
+
+### 📌 Definition
+
+**Reference types** store the **address (reference) of the data**, not the actual data.
+
+### 🔹 Features:
+
+* Stored in **heap memory**
+* Multiple variables can **refer to the same object**
+* Changes affect all references
+
+### 🔹 Examples:
+
+* `string`, `array`, `class`, `object`
+
+### 🔹 Example:
+
+```csharp
+class Demo
+{
+    public int value;
+}
+
+Demo obj1 = new Demo();
+obj1.value = 10;
+
+Demo obj2 = obj1;
+obj2.value = 20;
+
+Console.WriteLine(obj1.value); // Output: 20
+```
+
+👉 Both refer to the same object
+
+---
+
+## 🔹 Key Differences
+
+| Feature       | Value Types           | Reference Types      |
+| ------------- | --------------------- | -------------------- |
+| Storage       | Stack                 | Heap                 |
+| Data Stored   | Actual value          | Reference (address)  |
+| Copy Behavior | Creates separate copy | Copies reference     |
+| Performance   | Faster                | Slightly slower      |
+| Examples      | int, float, bool      | string, array, class |
+
+---
+
+## 🔹 Real-Life Analogy
+
+* **Value Type** → Like a **photocopy of a document** (independent copy)
+* **Reference Type** → Like a **shared Google Doc link** (same data shared)
+
+---
+
+## ✅ Summary
+
+* **Value Types** store actual data and are independent
+* **Reference Types** store references and share data
+* Understanding this helps in **memory management and performance**
+
+---
+
+Q) Primitive Data Types
+
+## 🔹 Primitive Data Types (in C#)
+
+### 📌 What are Primitive Data Types?
+
+**Primitive data types** are the **basic built-in data types** in C# used to store simple values like numbers, characters, and true/false values.
+
+They are defined by the **CTS (Common Type System)** in the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Common Primitive Data Types in C#
+
+| Data Type | Description            | Example Value |
+| --------- | ---------------------- | ------------- |
+| `int`     | Integer numbers        | 10            |
+| `float`   | Decimal numbers        | 10.5f         |
+| `double`  | Large decimal numbers  | 99.99         |
+| `char`    | Single character       | 'A'           |
+| `bool`    | True/False value       | true          |
+| `byte`    | Small positive numbers | 255           |
+| `short`   | Small integer          | 1000          |
+| `long`    | Large integer          | 100000L       |
+
+---
+
+## 🔹 Example
+
+```csharp id="l4c1d8"
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int age = 20;
+        float marks = 85.5f;
+        char grade = 'A';
+        bool isPassed = true;
+
+        Console.WriteLine(age);
+        Console.WriteLine(marks);
+        Console.WriteLine(grade);
+        Console.WriteLine(isPassed);
+    }
+}
+```
+
+---
+
+## 🔹 Features of Primitive Data Types
+
+* ✔ Built-in and predefined
+* ✔ Easy to use
+* ✔ Store single values
+* ✔ Mostly **value types** (stored in stack)
+
+---
+
+## 🔹 Why They Are Important
+
+* Form the **foundation of programming**
+* Used in calculations, conditions, and logic
+* Required for all types of applications
+
+---
+
+## 🔹 Summary
+
+Primitive data types are the **basic building blocks in C#** used to store simple values like numbers, characters, and boolean values.
+
+---
+
+Q) Non-Primitive Data Types
+
+## 🔹 Non-Primitive Data Types (in C#)
+
+### 📌 What are Non-Primitive Data Types?
+
+**Non-primitive data types** are **complex data types** that are not built-in for storing single values.
+They are used to store **multiple values, objects, or more complex data structures**.
+
+They are part of the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Key Characteristics
+
+* Store **multiple or complex data**
+* Usually **reference types** (stored in heap memory)
+* Can be **user-defined or built-in**
+* Support object-oriented programming
+
+---
+
+## 🔹 Types of Non-Primitive Data Types
+
+### 1. **Class**
+
+* Blueprint for creating objects
+* Contains data and methods
+
+```csharp
+class Student
+{
+    public string name;
+}
+```
+
+---
+
+### 2. **Object**
+
+* Instance of a class
+
+```csharp
+Student s = new Student();
+```
+
+---
+
+### 3. **Array**
+
+* Collection of similar data types
+
+```csharp
+int[] numbers = {1, 2, 3, 4};
+```
+
+---
+
+### 4. **String**
+
+* Collection of characters
+
+```csharp
+string name = "Manish";
+```
+
+---
+
+### 5. **Interface**
+
+* Defines methods without implementation
+
+```csharp
+interface IShape
+{
+    void Draw();
+}
+```
+
+---
+
+### 6. **Delegate**
+
+* Reference to a method
+
+```csharp
+delegate void MyDelegate();
+```
+
+---
+
+## 🔹 Example
+
+```csharp id="u3dn28"
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string name = "John";          // string (non-primitive)
+        int[] arr = {1, 2, 3};         // array
+
+        Console.WriteLine(name);
+        Console.WriteLine(arr[0]);
+    }
+}
+```
+
+---
+
+## 🔹 Difference from Primitive Types
+
+| Feature     | Primitive Types | Non-Primitive Types     |
+| ----------- | --------------- | ----------------------- |
+| Data Stored | Single value    | Multiple/complex values |
+| Memory      | Stack           | Heap                    |
+| Examples    | int, char, bool | class, array, string    |
+
+---
+
+## 🔹 Advantages
+
+* ✔ Can store complex data
+* ✔ Supports OOP concepts
+* ✔ Reusable and flexible
+
+---
+
+## 🔹 Summary
+
+Non-primitive data types are **complex data structures** like classes, arrays, and strings that allow storing and managing **multiple or structured data** in C#.
+
+---
+
+
+Q)Type Conversion
+
+## 🔹 Type Conversion (in C#)
+
+### 📌 What is Type Conversion?
+
+**Type conversion** is the process of **converting one data type into another** in C#.
+
+It is an important concept in the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Types of Type Conversion
+
+### 1. **Implicit Conversion (Automatic)**
+
+* Done automatically by the compiler
+* Safe conversion (no data loss)
+* Converts **smaller type → larger type**
+
+### 🔹 Example:
+
+```csharp
+int num = 10;
+double d = num;  // int → double
+Console.WriteLine(d);
+```
+
+👉 No data loss occurs
+
+---
+
+### 2. **Explicit Conversion (Casting)**
+
+* Done manually by the programmer
+* May cause **data loss**
+* Converts **larger type → smaller type**
+
+### 🔹 Example:
+
+```csharp
+double d = 10.75;
+int num = (int)d;  // double → int
+Console.WriteLine(num);
+```
+
+👉 Output: `10` (decimal part lost)
+
+---
+
+### 3. **Type Conversion Using Methods**
+
+C# provides built-in methods for safe conversion:
+
+#### 🔹 Example:
+
+```csharp
+string str = "123";
+int num = Convert.ToInt32(str);
+Console.WriteLine(num);
+```
+
+👉 Converts string → int safely
+
+---
+
+## 🔹 Common Conversion Methods
+
+* `Convert.ToInt32()`
+* `Convert.ToDouble()`
+* `Convert.ToString()`
+* `int.Parse()`
+* `double.Parse()`
+
+---
+
+## 🔹 Example (Complete)
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int a = 5;
+        double b = a; // implicit
+
+        double x = 9.8;
+        int y = (int)x; // explicit
+
+        string s = "100";
+        int z = Convert.ToInt32(s); // method
+
+        Console.WriteLine(b);
+        Console.WriteLine(y);
+        Console.WriteLine(z);
+    }
+}
+```
+
+---
+
+## 🔹 Key Points
+
+* Implicit → automatic and safe
+* Explicit → manual and may lose data
+* Methods → safe and flexible
+
+---
+
+## 🔹 Summary
+
+Type conversion in C# allows changing one data type into another using **implicit conversion, explicit casting, or built-in methods**, helping in flexible and efficient programming.
+
+---
+
+
+
+
+Q) Boxing and Unboxing
+
+## 🔹 Boxing and Unboxing (in C#)
+
+### 📌 What is Boxing?
+
+**Boxing** is the process of **converting a value type into a reference type (object)**.
+
+👉 The value is stored in the **heap memory** instead of the stack.
+
+---
+
+### 🔹 Example (Boxing)
+
+```csharp
+int num = 10;      // value type (stack)
+object obj = num;  // boxing (converted to object in heap)
+```
+
+---
+
+### 📌 What is Unboxing?
+
+**Unboxing** is the process of **converting a reference type (object) back into a value type**.
+
+👉 Requires **explicit casting**.
+
+---
+
+### 🔹 Example (Unboxing)
+
+```csharp
+object obj = 10;   // boxing
+int num = (int)obj; // unboxing
+```
+
+---
+
+## 🔹 How It Works
+
+* Boxing:
+
+  * Value → copied from stack → stored in heap
+* Unboxing:
+
+  * Value → extracted from heap → placed back in stack
+
+---
+
+## 🔹 Key Points
+
+* Boxing is **implicit**
+* Unboxing is **explicit**
+* Occurs when working with **object type or interfaces**
+
+---
+
+## 🔹 Performance Impact
+
+* Boxing/unboxing involves **memory allocation and copying**
+* Can reduce performance if used frequently
+
+---
+
+## 🔹 Example (Complete)
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int a = 5;
+
+        object obj = a;      // boxing
+        int b = (int)obj;    // unboxing
+
+        Console.WriteLine(b);
+    }
+}
+```
+
+---
+
+## 🔹 Advantages
+
+* Enables **type conversion between value and reference types**
+* Useful when working with collections or APIs
+
+---
+
+## 🔹 Disadvantages
+
+* ❌ Slower performance due to memory operations
+* ❌ Increases memory usage
+
+---
+
+## 🔹 Real-Life Analogy
+
+* **Boxing** → Putting an item into a box
+* **Unboxing** → Taking the item out of the box
+
+---
+
+## ✅ Summary
+
+* **Boxing** converts value type → object (heap)
+* **Unboxing** converts object → value type (requires casting)
+* Important for understanding memory and performance in C#
+
+---
+
+
+
+
+🔰 7. Variables and Constants
+
+Q) Declaring Variables
+
+## 🔹 Declaring Variables (in C#)
+
+### 📌 What is a Variable?
+
+A **variable** is a named storage location used to **store data** in a program.
+
+In C#, variables are part of the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Variable Declaration
+
+Declaring a variable means **specifying its data type and name**.
+
+### 🔹 Syntax:
+
+```csharp
+dataType variableName;
+```
+
+---
+
+## 🔹 Example
+
+```csharp
+int age;
+```
+
+👉 Here:
+
+* `int` → data type
+* `age` → variable name
+
+---
+
+## 🔹 Variable Initialization
+
+Assigning a value to a variable.
+
+```csharp
+int age = 20;
+```
+
+---
+
+## 🔹 Multiple Variable Declaration
+
+```csharp
+int a = 10, b = 20, c = 30;
+```
+
+---
+
+## 🔹 Different Types of Variables
+
+### 1. **Local Variables**
+
+* Declared inside a method
+
+```csharp
+void Method()
+{
+    int x = 5;
+}
+```
+
+---
+
+### 2. **Instance Variables**
+
+* Declared inside a class but outside methods
+
+```csharp
+class Demo
+{
+    int num;
+}
+```
+
+---
+
+### 3. **Static Variables**
+
+* Shared among all objects
+
+```csharp
+class Demo
+{
+    static int count = 0;
+}
+```
+
+---
+
+## 🔹 Rules for Naming Variables
+
+* Must start with a letter or `_`
+* Cannot start with a number
+* Cannot use keywords (like `int`, `class`)
+* Case-sensitive (`age` and `Age` are different)
+
+---
+
+## 🔹 Example Program
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int age = 21;
+        string name = "Manish";
+
+        Console.WriteLine("Name: " + name);
+        Console.WriteLine("Age: " + age);
+    }
+}
+```
+
+---
+
+## 🔹 Key Points
+
+* Variables store data
+* Must be declared before use
+* Each variable has a **data type**
+
+---
+
+## ✅ Summary
+
+Declaring variables in C# involves **defining a data type and name**, which allows storing and manipulating data in a program.
+
+---
+
+
+
+Q) Constants (const, readonly)
+
+## 🔹 Constants in C# (`const` and `readonly`)
+
+### 📌 What are Constants?
+
+**Constants** are variables whose **values cannot be changed after they are assigned**.
+
+In C#, constants are supported using:
+
+* `const`
+* `readonly`
+  Both are part of the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 1. `const` (Compile-time Constant)
+
+### 📌 Definition
+
+* Value is **fixed at compile time**
+* Must be initialized at the time of declaration
+* Cannot be changed anywhere in the program
+
+### 🔹 Example:
+
+```csharp
+const double PI = 3.14;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine(PI);
+    }
+}
+```
+
+---
+
+## 🔹 Features of `const`
+
+* ✔ Value is fixed and known at compile time
+* ✔ Implicitly **static**
+* ✔ Cannot be modified
+
+---
+
+## 🔹 2. `readonly` (Runtime Constant)
+
+### 📌 Definition
+
+* Value is assigned **at runtime**
+* Can be initialized:
+
+  * At declaration OR
+  * Inside constructor
+* Cannot be changed after initialization
+
+### 🔹 Example:
+
+```csharp
+class Demo
+{
+    readonly int value;
+
+    public Demo()
+    {
+        value = 10; // assigned in constructor
+    }
+}
+```
+
+---
+
+## 🔹 Features of `readonly`
+
+* ✔ Value set at runtime
+* ✔ Can vary for different objects
+* ✔ More flexible than `const`
+
+---
+
+## 🔹 Key Differences
+
+| Feature        | `const`             | `readonly`                   |
+| -------------- | ------------------- | ---------------------------- |
+| Initialization | Compile-time        | Runtime                      |
+| Modification   | Not allowed         | Not allowed after assignment |
+| Static         | Always static       | Can be instance or static    |
+| Assignment     | At declaration only | Declaration or constructor   |
+| Flexibility    | Less flexible       | More flexible                |
+
+---
+
+## 🔹 Real-Life Analogy
+
+* `const` → Like **fixed value (e.g., days in a week = 7)**
+* `readonly` → Like **value set once (e.g., student ID assigned once)**
+
+---
+
+## ✅ Summary
+
+* `const` → compile-time constant (fixed value)
+* `readonly` → runtime constant (assigned once)
+* Both ensure **data cannot be modified after initialization**
+
+---
+
+
+
+Q) Scope of Variables
+
+## 🔹 Scope of Variables (in C#)
+
+### 📌 What is Scope?
+
+**Scope** refers to the **region of a program where a variable is accessible (can be used)**.
+
+In C#, scope defines **where a variable can be accessed or modified** within the program.
+
+---
+
+## 🔹 Types of Variable Scope
+
+### 1. **Local Scope**
+
+* Declared inside a **method, block, or loop**
+* Accessible **only within that block**
+
+### 🔹 Example:
+
+```csharp
+void Display()
+{
+    int x = 10; // local variable
+    Console.WriteLine(x);
+}
+```
+
+👉 `x` cannot be used outside the method
+
+---
+
+### 2. **Class Level Scope (Instance Variables)**
+
+* Declared inside a **class but outside methods**
+* Accessible by all methods of the class
+
+### 🔹 Example:
+
+```csharp
+class Demo
+{
+    int num = 5;
+
+    void Show()
+    {
+        Console.WriteLine(num);
+    }
+}
+```
+
+---
+
+### 3. **Static Scope**
+
+* Declared using `static` keyword
+* Shared among all objects of the class
+
+### 🔹 Example:
+
+```csharp
+class Demo
+{
+    static int count = 0;
+}
+```
+
+---
+
+### 4. **Block Scope**
+
+* Declared inside a **block `{}` (like if, loop)**
+* Accessible only within that block
+
+### 🔹 Example:
+
+```csharp
+if (true)
+{
+    int a = 10;
+    Console.WriteLine(a);
+}
+// a is not accessible here
+```
+
+---
+
+## 🔹 Key Points
+
+* Variables are accessible **only within their scope**
+* Helps avoid errors and conflicts
+* Improves code organization and security
+
+---
+
+## 🔹 Real-Life Analogy
+
+Think of scope like **room access**:
+
+* Local variable → accessible only inside one room
+* Class variable → accessible in entire house
+* Static variable → shared by everyone
+
+---
+
+## ✅ Summary
+
+The **scope of variables** defines where variables can be used in a program, such as **local, class-level, static, and block scope**, ensuring proper control and organization of data.
+
+---
+
+🔰 8. Operators
+
+Q) Arithmetic Operators
+
+## 🔹 Arithmetic Operators (in C#)
+
+### 📌 What are Arithmetic Operators?
+
+**Arithmetic operators** are used to perform **mathematical calculations** such as addition, subtraction, multiplication, etc., in C#.
+
+They are part of the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 List of Arithmetic Operators
+
+| Operator | Name                | Example | Result |
+| -------- | ------------------- | ------- | ------ |
+| `+`      | Addition            | `5 + 3` | 8      |
+| `-`      | Subtraction         | `5 - 3` | 2      |
+| `*`      | Multiplication      | `5 * 3` | 15     |
+| `/`      | Division            | `6 / 3` | 2      |
+| `%`      | Modulus (Remainder) | `5 % 2` | 1      |
+
+---
+
+## 🔹 Example Program
+
+```csharp id="3c6d2o"
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int a = 10, b = 3;
+
+        Console.WriteLine("Addition: " + (a + b));
+        Console.WriteLine("Subtraction: " + (a - b));
+        Console.WriteLine("Multiplication: " + (a * b));
+        Console.WriteLine("Division: " + (a / b));
+        Console.WriteLine("Modulus: " + (a % b));
+    }
+}
+```
+
+---
+
+## 🔹 Increment and Decrement Operators
+
+### 1. **Increment (`++`)**
+
+* Increases value by 1
+
+```csharp id="e48z5y"
+int x = 5;
+x++; // x becomes 6
+```
+
+---
+
+### 2. **Decrement (`--`)**
+
+* Decreases value by 1
+
+```csharp id="pd3rfa"
+int x = 5;
+x--; // x becomes 4
+```
+
+---
+
+## 🔹 Key Points
+
+* Used for mathematical calculations
+* Works with numeric data types
+* Division with integers gives integer result
+
+---
+
+## 🔹 Real-Life Analogy
+
+* `+` → Adding money
+* `-` → Spending money
+* `*` → Repeated addition
+* `/` → Sharing equally
+* `%` → Finding remainder
+
+---
+
+## ✅ Summary
+
+Arithmetic operators in C# are used to perform **basic mathematical operations** like addition, subtraction, multiplication, division, and modulus.
+
+---
+
+
+
+Q) Relational Operators
+
+## 🔹 Relational Operators (in C#)
+
+### 📌 What are Relational Operators?
+
+**Relational operators** are used to **compare two values** in C#.
+They return a **boolean result** (`true` or `false`).
+
+They are part of the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 List of Relational Operators
+
+| Operator | Meaning                  | Example  | Result |
+| -------- | ------------------------ | -------- | ------ |
+| `==`     | Equal to                 | `5 == 5` | true   |
+| `!=`     | Not equal to             | `5 != 3` | true   |
+| `>`      | Greater than             | `5 > 3`  | true   |
+| `<`      | Less than                | `5 < 3`  | false  |
+| `>=`     | Greater than or equal to | `5 >= 5` | true   |
+| `<=`     | Less than or equal to    | `5 <= 3` | false  |
+
+---
+
+## 🔹 Example Program
+
+```csharp id="r3k8dj"
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int a = 10, b = 5;
+
+        Console.WriteLine(a == b);
+        Console.WriteLine(a != b);
+        Console.WriteLine(a > b);
+        Console.WriteLine(a < b);
+        Console.WriteLine(a >= b);
+        Console.WriteLine(a <= b);
+    }
+}
+```
+
+---
+
+## 🔹 Key Points
+
+* Always returns **true or false**
+* Used in **decision-making statements** (if, while, etc.)
+* Compares two values
+
+---
+
+## 🔹 Real-Life Analogy
+
+* `==` → Checking if two things are equal
+* `>` → Comparing which is bigger
+* `<` → Comparing which is smaller
+
+---
+
+## ✅ Summary
+
+Relational operators are used to **compare values** and return a **boolean result**, which is essential for decision-making in programs.
+
+---
+
+
+Q) Logical Operators
+
+## 🔹 Logical Operators (in C#)
+
+### 📌 What are Logical Operators?
+
+**Logical operators** are used to **combine or modify conditions** in C#.
+They work with **boolean values** (`true` or `false`) and are commonly used in decision-making.
+
+They are part of the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Types of Logical Operators
+
+| Operator | Name | Description                          | Example        | Result                           |       |   |       |      |
+| -------- | ---- | ------------------------------------ | -------------- | -------------------------------- | ----- | - | ----- | ---- |
+| `&&`     | AND  | True if **both conditions are true** | `(5>3 && 4>2)` | true                             |       |   |       |      |
+| `        |      | `                                    | OR             | True if **at least one is true** | `(5>3 |   | 4<2)` | true |
+| `!`      | NOT  | Reverses the result                  | `!(5>3)`       | false                            |       |   |       |      |
+
+---
+
+## 🔹 Example Program
+
+```csharp id="5p9u3t"
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int a = 10, b = 5;
+
+        Console.WriteLine(a > 5 && b > 2); // true
+        Console.WriteLine(a > 5 || b < 2); // true
+        Console.WriteLine(!(a > b));       // false
+    }
+}
+```
+
+---
+
+## 🔹 How They Work
+
+### 1. **AND (`&&`)**
+
+* Returns true only if **both conditions are true**
+
+### 2. **OR (`||`)**
+
+* Returns true if **any one condition is true**
+
+### 3. **NOT (`!`)**
+
+* Converts true → false and false → true
+
+---
+
+## 🔹 Key Points
+
+* Used in **if, while, loops, and conditions**
+* Works only with boolean expressions
+* Helps combine multiple conditions
+
+---
+
+## 🔹 Real-Life Analogy
+
+* `&&` → You need **both conditions** (e.g., ID AND password)
+* `||` → **Either condition works** (cash OR card)
+* `!` → Opposite (NOT allowed)
+
+---
+
+## ✅ Summary
+
+Logical operators are used to **combine and control conditions** in C#, helping in decision-making and program flow.
+
+---
+
+
+
+🔰 9. Control Statements
+Q)  if / else
+## 🔹 if / else (in C#)
+
+### 📌 What is if / else?
+
+The **if / else statement** is used for **decision-making** in C#.
+It allows a program to **execute different blocks of code based on conditions**.
+
+It is part of the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Syntax
+
+### 🔸 Simple if
+
+```csharp
+if (condition)
+{
+    // code executes if condition is true
+}
+```
+
+---
+
+### 🔸 if...else
+
+```csharp
+if (condition)
+{
+    // executes if true
+}
+else
+{
+    // executes if false
+}
+```
+
+---
+
+### 🔸 if...else if...else
+
+```csharp
+if (condition1)
+{
+    // block 1
+}
+else if (condition2)
+{
+    // block 2
+}
+else
+{
+    // default block
+}
+```
+
+---
+
+## 🔹 Example
+
+```csharp id="ifelse123"
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int num = 10;
+
+        if (num > 0)
+        {
+            Console.WriteLine("Positive Number");
+        }
+        else
+        {
+            Console.WriteLine("Negative Number");
+        }
+    }
+}
+```
+
+👉 Output:
+
+```
+Positive Number
+```
+
+---
+
+## 🔹 Example with Multiple Conditions
+
+```csharp id="multiifelse"
+int marks = 75;
+
+if (marks >= 90)
+{
+    Console.WriteLine("Grade A");
+}
+else if (marks >= 75)
+{
+    Console.WriteLine("Grade B");
+}
+else
+{
+    Console.WriteLine("Grade C");
+}
+```
+
+---
+
+## 🔹 Key Points
+
+* Executes code based on **true/false condition**
+* Uses **relational and logical operators**
+* Helps control program flow
+
+---
+
+## 🔹 Real-Life Analogy
+
+* If it rains → take umbrella
+* Else → go without umbrella
+
+---
+
+## ✅ Summary
+
+The **if / else statement** is used to **control the flow of a program by executing different code blocks based on conditions**.
+
+---
+
+
+
+Q) switch
+## 🔹 switch Statement (in C#)
+
+### 📌 What is switch?
+
+The **switch statement** is a control statement used to **select one block of code from multiple options** based on a variable’s value.
+
+It is part of the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Syntax
+
+```csharp
+switch (expression)
+{
+    case value1:
+        // code block
+        break;
+
+    case value2:
+        // code block
+        break;
+
+    default:
+        // default code
+        break;
+}
+```
+
+---
+
+## 🔹 Example
+
+```csharp id="sw1"
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int day = 3;
+
+        switch (day)
+        {
+            case 1:
+                Console.WriteLine("Monday");
+                break;
+
+            case 2:
+                Console.WriteLine("Tuesday");
+                break;
+
+            case 3:
+                Console.WriteLine("Wednesday");
+                break;
+
+            default:
+                Console.WriteLine("Invalid day");
+                break;
+        }
+    }
+}
+```
+
+👉 Output:
+
+```
+Wednesday
+```
+
+---
+
+## 🔹 Key Points
+
+* Evaluates an **expression once**
+* Matches with **case values**
+* Uses `break` to exit each case
+* `default` runs if no case matches
+
+---
+
+## 🔹 Advantages
+
+* Cleaner than multiple `if-else` statements
+* Easy to read and maintain
+* Faster for multiple conditions
+
+---
+
+## 🔹 Rules of switch
+
+* Case values must be **constant**
+* No duplicate case values
+* `break` is required (to avoid fall-through)
+
+---
+
+## 🔹 Real-Life Analogy
+
+Think of switch like a **menu selection**:
+
+* You choose an option → corresponding action happens
+
+---
+
+## ✅ Summary
+
+The **switch statement** is used to **execute one block of code from many options**, making programs more readable and efficient when dealing with multiple conditions.
+
+---
+
+
+
+
+
+🔰 10. Loops
+Q) for loop
+## 🔹 for Loop (in C#)
+
+### 📌 What is a for Loop?
+
+A **for loop** is used to **repeat a block of code multiple times** when the number of iterations is known.
+
+It is part of the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Syntax
+
+```csharp
+for (initialization; condition; increment/decrement)
+{
+    // code to execute
+}
+```
+
+---
+
+## 🔹 How it Works
+
+1. **Initialization** → runs once at the beginning
+2. **Condition** → checked before each iteration
+3. **Code block** → executed if condition is true
+4. **Increment/Decrement** → updates loop variable
+
+---
+
+## 🔹 Example
+
+```csharp id="for123"
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        for (int i = 1; i <= 5; i++)
+        {
+            Console.WriteLine(i);
+        }
+    }
+}
+```
+
+👉 Output:
+
+```
+1
+2
+3
+4
+5
+```
+
+---
+
+## 🔹 Example (Reverse Loop)
+
+```csharp id="forrev"
+for (int i = 5; i >= 1; i--)
+{
+    Console.WriteLine(i);
+}
+```
+
+---
+
+## 🔹 Key Points
+
+* Used when number of iterations is **known**
+* Combines initialization, condition, and update in one line
+* Helps reduce code repetition
+
+---
+
+## 🔹 Advantages
+
+* ✔ Easy to use and understand
+* ✔ Compact syntax
+* ✔ Efficient for counting loops
+
+---
+
+## 🔹 Real-Life Analogy
+
+Like counting numbers:
+
+* Start from 1 → continue till 5 → increase by 1 each time
+
+---
+
+## ✅ Summary
+
+The **for loop** is used to **execute a block of code repeatedly for a fixed number of times**, making programs efficient and concise.
+
+---
+
+
+
+
+Q) while loop
+## 🔹 while Loop (in C#)
+
+### 📌 What is a while Loop?
+
+A **while loop** is used to **execute a block of code repeatedly as long as a condition is true**.
+
+It is part of the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Syntax
+
+```csharp id="while123"
+while (condition)
+{
+    // code to execute
+}
+```
+
+---
+
+## 🔹 How it Works
+
+1. Condition is checked first
+2. If **true**, the code block executes
+3. After execution, condition is checked again
+4. Loop continues until condition becomes **false**
+
+---
+
+## 🔹 Example
+
+```csharp id="whileex"
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int i = 1;
+
+        while (i <= 5)
+        {
+            Console.WriteLine(i);
+            i++; // increment
+        }
+    }
+}
+```
+
+👉 Output:
+
+```id="q2n9ke"
+1
+2
+3
+4
+5
+```
+
+---
+
+## 🔹 Key Points
+
+* Condition is checked **before execution**
+* Loop may not run at all if condition is false
+* Must update the variable inside loop to avoid infinite loop
+
+---
+
+## 🔹 Example (Infinite Loop ⚠️)
+
+```csharp id="infloop"
+while (true)
+{
+    Console.WriteLine("Infinite Loop");
+}
+```
+
+---
+
+## 🔹 Advantages
+
+* ✔ Useful when number of iterations is **unknown**
+* ✔ Simple and flexible
+
+---
+
+## 🔹 Real-Life Analogy
+
+* While you are hungry → keep eating
+* Stop when you are full
+
+---
+
+## ✅ Summary
+
+The **while loop** executes code **as long as a condition is true**, making it useful for situations where the number of repetitions is not known in advance.
+
+---
+
+
+
+
+Q) do-while loop
+
+## 🔹 do-while Loop (in C#)
+
+### 📌 What is a do-while Loop?
+
+A **do-while loop** is used to **execute a block of code at least once**, and then repeat it as long as a condition is true.
+
+It is part of the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Syntax
+
+```csharp id="dowhile1"
+do
+{
+    // code to execute
+}
+while (condition);
+```
+
+---
+
+## 🔹 How it Works
+
+1. Code inside `do` block executes **first**
+2. Condition is checked **after execution**
+3. If condition is true → loop repeats
+4. If false → loop stops
+
+👉 **Important:** Runs at least **one time** even if condition is false
+
+---
+
+## 🔹 Example
+
+```csharp id="dowhileex"
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int i = 1;
+
+        do
+        {
+            Console.WriteLine(i);
+            i++;
+        }
+        while (i <= 5);
+    }
+}
+```
+
+👉 Output:
+
+```id="yd2baf"
+1
+2
+3
+4
+5
+```
+
+---
+
+## 🔹 Example (Runs Once Even if False)
+
+```csharp id="dowhileonce"
+int i = 10;
+
+do
+{
+    Console.WriteLine(i);
+}
+while (i < 5);
+```
+
+👉 Output:
+
+```id="0i9qks"
+10
+```
+
+---
+
+## 🔹 Key Points
+
+* Executes **at least once**
+* Condition checked **after execution**
+* Useful when execution is required before checking condition
+
+---
+
+## 🔹 Advantages
+
+* ✔ Ensures code runs at least once
+* ✔ Useful for menu-driven programs
+
+---
+
+## 🔹 Real-Life Analogy
+
+* Try something once → then decide whether to continue
+
+---
+
+## ✅ Summary
+
+The **do-while loop** executes a block of code **at least once** and continues **while the condition is true**, making it different from the while loop.
+
+---
+
+
+Q) break and continue
+## 🔹 break and continue (in C#)
+
+### 📌 What are break and continue?
+
+**break** and **continue** are control statements used to **change the normal flow of loops** in C#.
+
+They are part of the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 1. break Statement
+
+### 📌 Definition
+
+The **break** statement is used to **exit the loop immediately**.
+
+### 🔹 Example:
+
+```csharp id="break1"
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        for (int i = 1; i <= 5; i++)
+        {
+            if (i == 3)
+                break;
+
+            Console.WriteLine(i);
+        }
+    }
+}
+```
+
+👉 Output:
+
+```id="brkout"
+1
+2
+```
+
+👉 Loop stops when `i == 3`
+
+---
+
+## 🔹 2. continue Statement
+
+### 📌 Definition
+
+The **continue** statement is used to **skip the current iteration** and move to the next one.
+
+### 🔹 Example:
+
+```csharp id="cont1"
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        for (int i = 1; i <= 5; i++)
+        {
+            if (i == 3)
+                continue;
+
+            Console.WriteLine(i);
+        }
+    }
+}
+```
+
+👉 Output:
+
+```id="contout"
+1
+2
+4
+5
+```
+
+👉 `3` is skipped
+
+---
+
+## 🔹 Key Differences
+
+| Feature       | break                      | continue                           |
+| ------------- | -------------------------- | ---------------------------------- |
+| Function      | Exits loop completely      | Skips current iteration            |
+| Loop Behavior | Stops loop                 | Continues loop                     |
+| Usage         | When loop should terminate | When some values should be skipped |
+
+---
+
+## 🔹 Key Points
+
+* Used inside loops (`for`, `while`, `do-while`)
+* `break` can also be used in `switch`
+* Helps control loop execution
+
+---
+
+## 🔹 Real-Life Analogy
+
+* **break** → Exit the room immediately
+* **continue** → Skip one task and move to next
+
+---
+
+## ✅ Summary
+
+* **break** stops the loop completely
+* **continue** skips one iteration and continues
+* Both help control the flow of loops effectively
+
+---
+
+
+
+
+
+🔰 11. Methods
+Q)## 🔹 What is a Method (in C#)?
+
+### 📌 Definition
+
+A **method** is a **block of code that performs a specific task** and can be **called (executed) whenever needed**.
+
+It helps in organizing code and avoiding repetition.
+
+C# methods are part of the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Syntax
+
+```csharp
+returnType MethodName(parameters)
+{
+    // code to execute
+}
+```
+
+---
+
+## 🔹 Example
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Greet(); // method call
+    }
+
+    static void Greet()
+    {
+        Console.WriteLine("Hello, Method!");
+    }
+}
+```
+
+👉 Output:
+
+```
+Hello, Method!
+```
+
+---
+
+## 🔹 Types of Methods
+
+### 1. **Method without Parameters**
+
+```csharp
+void Show()
+{
+    Console.WriteLine("No parameters");
+}
+```
+
+---
+
+### 2. **Method with Parameters**
+
+```csharp
+void Add(int a, int b)
+{
+    Console.WriteLine(a + b);
+}
+```
+
+---
+
+### 3. **Method with Return Value**
+
+```csharp
+int Multiply(int a, int b)
+{
+    return a * b;
+}
+```
+
+---
+
+## 🔹 Key Features
+
+* ✔ Reusable code
+* ✔ Improves readability
+* ✔ Reduces duplication
+* ✔ Makes program modular
+
+---
+
+## 🔹 Real-Life Analogy
+
+A method is like a **machine**:
+
+* Input → process → output
+
+---
+
+## ✅ Summary
+
+A **method** is a reusable block of code that performs a specific task and can be called whenever required in a program.
+
+---
+
+
+
+
+Q) Types of Methods
+
+## 🔹 Types of Methods (in C#)
+
+### 📌 Introduction
+
+In C#, **methods** can be classified based on **parameters and return values**.
+They are used to perform specific tasks and improve code reusability in the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 1. Method without Parameters and without Return Value
+
+* Does not take input
+* Does not return any value
+
+### 🔹 Example:
+
+```csharp
+void Show()
+{
+    Console.WriteLine("Hello");
+}
+```
+
+---
+
+## 🔹 2. Method without Parameters but with Return Value
+
+* Does not take input
+* Returns a value
+
+### 🔹 Example:
+
+```csharp
+int GetNumber()
+{
+    return 10;
+}
+```
+
+---
+
+## 🔹 3. Method with Parameters but without Return Value
+
+* Takes input
+* Does not return value
+
+### 🔹 Example:
+
+```csharp
+void Display(int num)
+{
+    Console.WriteLine(num);
+}
+```
+
+---
+
+## 🔹 4. Method with Parameters and Return Value
+
+* Takes input
+* Returns a value
+
+### 🔹 Example:
+
+```csharp
+int Add(int a, int b)
+{
+    return a + b;
+}
+```
+
+---
+
+## 🔹 Other Common Types of Methods
+
+### 🔸 Static Method
+
+* Belongs to class, not object
+
+```csharp
+static void Show()
+{
+}
+```
+
+---
+
+### 🔸 Instance Method
+
+* Requires object to call
+
+```csharp
+class Demo
+{
+    void Display()
+    {
+    }
+}
+```
+
+---
+
+### 🔸 Constructor
+
+* Special method used to initialize objects
+
+```csharp
+class Demo
+{
+    public Demo()
+    {
+        Console.WriteLine("Constructor called");
+    }
+}
+```
+
+---
+
+## 🔹 Summary Table
+
+| Type                         | Parameters | Return Value |
+| ---------------------------- | ---------- | ------------ |
+| No parameters, no return     | ❌          | ❌            |
+| No parameters, with return   | ❌          | ✔            |
+| With parameters, no return   | ✔          | ❌            |
+| With parameters, with return | ✔          | ✔            |
+
+---
+
+## ✅ Summary
+
+Methods in C# are categorized based on **parameters and return values**, such as:
+
+* Without parameters/return
+* With parameters/return
+  They help in **modular, reusable, and organized programming**.
+
+---
+
+
+
+Q) Method Parameters
+## 🔹 Method Parameters (in C#)
+
+### 📌 What are Method Parameters?
+
+**Method parameters** are variables passed to a method to provide **input data**.
+They allow methods to **receive values and perform operations**.
+
+They are part of the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Syntax
+
+```csharp
+returnType MethodName(parameter1, parameter2)
+{
+    // code using parameters
+}
+```
+
+---
+
+## 🔹 Example
+
+```csharp id="p1"
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Add(5, 3); // passing arguments
+    }
+
+    static void Add(int a, int b)
+    {
+        Console.WriteLine(a + b);
+    }
+}
+```
+
+👉 Output:
+
+```
+8
+```
+
+---
+
+## 🔹 Types of Method Parameters
+
+### 1. **Value Parameters (Default)**
+
+* Passes **copy of value**
+* Changes do not affect original variable
+
+```csharp id="p2"
+void Show(int x)
+{
+    x = 10;
+}
+```
+
+---
+
+### 2. **Reference Parameters (`ref`)**
+
+* Passes **reference (address)**
+* Changes affect original variable
+
+```csharp id="p3"
+void Change(ref int x)
+{
+    x = 20;
+}
+```
+
+---
+
+### 3. **Output Parameters (`out`)**
+
+* Used to return multiple values
+* Must be assigned inside method
+
+```csharp id="p4"
+void GetValue(out int x)
+{
+    x = 50;
+}
+```
+
+---
+
+### 4. **Parameter Array (`params`)**
+
+* Allows passing **multiple values**
+
+```csharp id="p5"
+void Sum(params int[] numbers)
+{
+    foreach (int n in numbers)
+        Console.WriteLine(n);
+}
+```
+
+---
+
+## 🔹 Arguments vs Parameters
+
+* **Parameters** → Defined in method
+* **Arguments** → Passed during method call
+
+---
+
+## 🔹 Key Points
+
+* Parameters make methods flexible
+* Can pass values in different ways (`ref`, `out`, `params`)
+* Improve code reusability
+
+---
+
+## 🔹 Summary
+
+Method parameters are used to **pass data into methods**, and they can be of different types like **value, reference, output, and parameter arrays**.
+
+---
+
+
+
+
+Q) Static vs Non-static Methods
+## 🔹 Static vs Non-Static Methods (in C#)
+
+### 📌 Introduction
+
+In C#, methods can be **static** or **non-static (instance methods)**.
+They define how methods are accessed and used in the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 1. Static Methods
+
+### 📌 Definition
+
+A **static method** belongs to the **class itself**, not to any object.
+
+### 🔹 Features:
+
+* Called using **class name**
+* No need to create an object
+* Can access only **static members**
+
+### 🔹 Example:
+
+```csharp id="st1"
+using System;
+
+class Demo
+{
+    public static void Show()
+    {
+        Console.WriteLine("Static Method");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Demo.Show(); // no object needed
+    }
+}
+```
+
+---
+
+## 🔹 2. Non-Static Methods (Instance Methods)
+
+### 📌 Definition
+
+A **non-static method** belongs to an **object (instance)** of a class.
+
+### 🔹 Features:
+
+* Requires **object creation**
+* Can access both static and non-static members
+
+### 🔹 Example:
+
+```csharp id="nst1"
+using System;
+
+class Demo
+{
+    public void Display()
+    {
+        Console.WriteLine("Non-Static Method");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Demo obj = new Demo(); // object creation
+        obj.Display();
+    }
+}
+```
+
+---
+
+## 🔹 Key Differences
+
+| Feature         | Static Method       | Non-Static Method         |
+| --------------- | ------------------- | ------------------------- |
+| Belongs to      | Class               | Object                    |
+| Object Required | ❌ No                | ✔ Yes                     |
+| Access          | Using class name    | Using object              |
+| Data Access     | Only static members | Static + instance members |
+| Memory          | Allocated once      | Allocated per object      |
+
+---
+
+## 🔹 Real-Life Analogy
+
+* **Static Method** → Like a **common facility (e.g., school bell)** used by everyone
+* **Non-Static Method** → Like a **personal item (e.g., student notebook)**
+
+---
+
+## ✅ Summary
+
+* **Static methods** belong to the class and don’t require objects
+* **Non-static methods** belong to objects and require object creation
+* Both are essential for organizing program logic
+
+---
+
+
+
+Q) Method Overloading
+
+## 🔹 Method Overloading (in C#)
+
+### 📌 What is Method Overloading?
+
+**Method overloading** is a feature in C# that allows you to **define multiple methods with the same name** but with **different parameters** (number, type, or order).
+
+It is part of **compile-time polymorphism** in the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Key Idea
+
+👉 Same method name
+👉 Different parameter list
+
+---
+
+## 🔹 Example
+
+```csharp
+using System;
+
+class Program
+{
+    static void Add(int a, int b)
+    {
+        Console.WriteLine(a + b);
+    }
+
+    static void Add(int a, int b, int c)
+    {
+        Console.WriteLine(a + b + c);
+    }
+
+    static void Add(double a, double b)
+    {
+        Console.WriteLine(a + b);
+    }
+
+    static void Main()
+    {
+        Add(2, 3);        // calls first method
+        Add(2, 3, 4);     // calls second method
+        Add(2.5, 3.5);    // calls third method
+    }
+}
+```
+
+---
+
+## 🔹 How Overloading Works
+
+The compiler decides which method to call based on:
+
+* Number of parameters
+* Type of parameters
+* Order of parameters
+
+---
+
+## 🔹 Valid Ways to Overload
+
+✔ Change number of parameters
+✔ Change data type of parameters
+✔ Change order of parameters
+
+---
+
+## 🔹 Invalid Overloading
+
+❌ Only changing return type is **not allowed**
+
+```csharp
+int Add(int a, int b) { return a + b; }
+double Add(int a, int b) { return a + b; } // ❌ Error
+```
+
+---
+
+## 🔹 Advantages
+
+* ✔ Improves code readability
+* ✔ Reduces method name complexity
+* ✔ Supports polymorphism
+
+---
+
+## 🔹 Real-Life Analogy
+
+Think of a **calculator**:
+
+* Same button "Add"
+* Works for 2 numbers, 3 numbers, or decimals
+
+---
+
+## ✅ Summary
+
+Method overloading allows **multiple methods with the same name but different parameters**, improving flexibility and readability in C# programs.
+
+---
+
+
+
+Q) Meaning of public static void
+
+## 🔹 Meaning of `public static void` (in C#)
+
+In C#, `public static void` is a combination of **keywords** used in method declaration. Each keyword has a specific meaning in the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Breakdown of Keywords
+
+### 1. **public**
+
+* **Access modifier**
+* Makes the method **accessible from anywhere** (inside or outside the class)
+
+👉 Example:
+
+```csharp
+public void Show()
+{
+}
+```
+
+---
+
+### 2. **static**
+
+* Indicates the method **belongs to the class**, not to an object
+* Can be called **without creating an object**
+
+👉 Example:
+
+```csharp
+static void Show()
+{
+}
+```
+
+---
+
+### 3. **void**
+
+* Specifies the **return type**
+* Means the method **does not return any value**
+
+👉 Example:
+
+```csharp
+void Show()
+{
+    Console.WriteLine("Hello");
+}
+```
+
+---
+
+## 🔹 Combined Meaning
+
+```csharp
+public static void Show()
+{
+    Console.WriteLine("Hello");
+}
+```
+
+👉 This means:
+
+* **public** → Accessible everywhere
+* **static** → No object required
+* **void** → No return value
+
+---
+
+## 🔹 Example with Main Method
+
+```csharp
+using System;
+
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Hello World");
+    }
+}
+```
+
+---
+
+## 🔹 Summary Table
+
+| Keyword | Meaning                            |
+| ------- | ---------------------------------- |
+| public  | Accessible from anywhere           |
+| static  | Belongs to class, no object needed |
+| void    | No return value                    |
+
+---
+
+## ✅ Summary
+
+`public static void` defines a method that is **accessible everywhere**, **does not require an object**, and **does not return any value**.
+
+---
+
+
+
+Memory Concepts
+Q) Stack vs Heap
+## 🔹 Stack vs Heap (in C#)
+
+### 📌 Introduction
+
+In C#, memory is mainly divided into **Stack** and **Heap**.
+These are managed by the **CLR (Common Language Runtime)** in the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Stack Memory
+
+### 📌 Definition
+
+**Stack** is a memory area used for **storing value types and method calls**.
+
+### 🔹 Features:
+
+* Stores **value types** (`int`, `float`, `bool`, etc.)
+* Memory is **automatically managed**
+* Very **fast access**
+* Uses **LIFO (Last In First Out)**
+
+### 🔹 Example:
+
+```csharp
+int a = 10;
+int b = 20;
+```
+
+---
+
+## 🔹 Heap Memory
+
+### 📌 Definition
+
+**Heap** is a memory area used for **storing reference types (objects)**.
+
+### 🔹 Features:
+
+* Stores **objects, arrays, strings**
+* Managed by **Garbage Collector (GC)**
+* Slower than stack
+* Memory is allocated dynamically
+
+### 🔹 Example:
+
+```csharp
+string name = "Manish";
+```
+
+---
+
+## 🔹 Key Differences
+
+| Feature           | Stack       | Heap              |
+| ----------------- | ----------- | ----------------- |
+| Data Stored       | Value types | Reference types   |
+| Memory Allocation | Static      | Dynamic           |
+| Speed             | Faster      | Slower            |
+| Management        | Automatic   | Garbage Collector |
+| Structure         | LIFO        | No fixed order    |
+
+---
+
+## 🔹 How They Work Together
+
+* Value types → stored directly in stack
+* Reference types → reference in stack, actual object in heap
+
+---
+
+## 🔹 Example
+
+```csharp
+int x = 5;              // stack
+string name = "John";   // heap (reference in stack)
+```
+
+---
+
+## 🔹 Real-Life Analogy
+
+* **Stack** → Like a stack of plates (last added, first removed)
+* **Heap** → Like a storage room (objects stored randomly)
+
+---
+
+## ✅ Summary
+
+* **Stack** stores value types and is fast and simple
+* **Heap** stores reference types and is managed by GC
+* Both are essential for memory management in C#
+
+---
+
+
+
+
+Q) Memory allocation in .NET
+## 🔹 Memory Allocation in .NET
+
+### 📌 What is Memory Allocation?
+
+**Memory allocation** in .NET refers to the process of **assigning memory to variables and objects** during program execution.
+
+It is managed by the **CLR (Common Language Runtime)** of the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Types of Memory Allocation
+
+### 1. **Stack Allocation**
+
+* Used for **value types** and method calls
+* Memory is allocated automatically
+* Very fast and efficient
+
+👉 Examples:
+
+* `int`, `float`, `bool`, `char`
+
+```csharp
+int a = 10;
+```
+
+---
+
+### 2. **Heap Allocation**
+
+* Used for **reference types (objects)**
+* Memory is allocated dynamically
+* Managed by **Garbage Collector (GC)**
+
+👉 Examples:
+
+* `string`, arrays, objects
+
+```csharp
+string name = "Manish";
+```
+
+---
+
+## 🔹 How Memory Allocation Works
+
+1. Program starts execution
+2. Variables are created:
+
+   * Value types → stored in **stack**
+   * Reference types → stored in **heap**
+3. Stack stores references to heap objects
+4. Garbage Collector removes unused objects
+5. Memory is reused
+
+---
+
+## 🔹 Role of CLR in Memory Allocation
+
+* Allocates memory for variables and objects
+* Manages stack and heap
+* Uses **Garbage Collector** to free memory
+* Ensures memory safety and efficiency
+
+---
+
+## 🔹 Example
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = 5;              // stack allocation
+        string name = "John";   // heap allocation
+
+        name = null;            // eligible for garbage collection
+    }
+}
+```
+
+---
+
+## 🔹 Key Points
+
+* Stack → fast, automatic, for value types
+* Heap → dynamic, for objects
+* GC → cleans unused memory
+* CLR → manages entire process
+
+---
+
+## 🔹 Advantages
+
+* ✔ Automatic memory management
+* ✔ Reduces memory leaks
+* ✔ Improves performance
+
+---
+
+## 🔹 Summary
+
+Memory allocation in .NET is handled by the CLR using **stack (for value types)** and **heap (for reference types)**, with the **Garbage Collector** managing memory cleanup automatically.
+
+---
+
+
+
+Q) Where variables are stored## 🔹 Where Variables are Stored (in C#)
+
+### 📌 Introduction
+
+In C#, variables are stored in different memory areas depending on their **type and scope**.
+Memory is managed by the **CLR (Common Language Runtime)** in the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Main Memory Areas
+
+### 1. **Stack Memory**
+
+* Stores **value type variables**
+* Stores **method calls and local variables**
+* Fast and automatically managed
+
+👉 Examples:
+
+* `int`, `float`, `char`, `bool`
+
+```csharp
+int a = 10; // stored in stack
+```
+
+---
+
+### 2. **Heap Memory**
+
+* Stores **reference type variables (objects)**
+* Actual data is stored here
+* Managed by **Garbage Collector (GC)**
+
+👉 Examples:
+
+* `string`, arrays, objects
+
+```csharp
+string name = "Manish"; // object in heap
+```
+
+---
+
+### 3. **Reference Storage (Stack + Heap Connection)**
+
+* Reference variable is stored in **stack**
+* Actual object is stored in **heap**
+
+👉 Example:
+
+```csharp
+string name = "John";
+```
+
+* `name` (reference) → stack
+* `"John"` (object) → heap
+
+---
+
+## 🔹 Summary Table
+
+| Variable Type   | Stored In | Description                        |
+| --------------- | --------- | ---------------------------------- |
+| Value Types     | Stack     | Directly stores value              |
+| Reference Types | Heap      | Stores object (reference in stack) |
+
+---
+
+## 🔹 Key Points
+
+* Stack → fast, used for value types
+* Heap → dynamic, used for objects
+* CLR manages both automatically
+* Garbage Collector cleans heap memory
+
+---
+
+## 🔹 Real-Life Analogy
+
+* Stack → small desk (quick access items)
+* Heap → storage room (large objects)
+
+---
+
+## ✅ Summary
+
+Variables in C# are stored in:
+
+* **Stack** → for value types
+* **Heap** → for reference types
+* References connect stack to heap
+
+---
+
+
+
+Q) Where methods are stored
+## 🔹 Where Methods are Stored (in C#)
+
+### 📌 Introduction
+
+In C#, methods are **not stored in stack or heap like variables**.
+They are stored in a separate memory area called the **Code Area (or Method Area)**.
+
+This is managed by the **CLR (Common Language Runtime)** in the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Memory Areas Related to Methods
+
+### 1. **Code Area (Method Area)**
+
+* Stores **compiled code (MSIL)** of methods
+* Contains method definitions
+* Shared by all objects
+
+👉 Example:
+
+```csharp
+void Show()
+{
+    Console.WriteLine("Hello");
+}
+```
+
+➡ The method `Show()` is stored in the **code area**
+
+---
+
+### 2. **Stack Memory**
+
+* Stores **method calls and execution context**
+* Each method call creates a **stack frame**
+
+👉 When a method is called:
+
+* Parameters
+* Local variables
+* Return address
+  are stored in the stack
+
+---
+
+### 3. **Heap Memory**
+
+* Stores objects used by methods
+* Methods can access heap data via references
+
+---
+
+## 🔹 How It Works
+
+1. Method code → stored in **code area**
+2. When method is called → stack frame created
+3. Local variables → stored in stack
+4. Objects used → stored in heap
+5. After execution → stack frame removed
+
+---
+
+## 🔹 Example
+
+```csharp
+using System;
+
+class Program
+{
+    static void Display()
+    {
+        int x = 5; // stored in stack
+        Console.WriteLine(x);
+    }
+
+    static void Main()
+    {
+        Display(); // method call
+    }
+}
+```
+
+---
+
+## 🔹 Key Points
+
+* Method code → **Code Area**
+* Method execution → **Stack**
+* Objects used → **Heap**
+* Stack frames are removed after execution
+
+---
+
+## 🔹 Real-Life Analogy
+
+* Code Area → Recipe book (instructions stored)
+* Stack → Kitchen workspace (active cooking)
+* Heap → Storage room (ingredients)
+
+---
+
+## ✅ Summary
+
+* Methods are stored in the **code area**
+* When called, they use the **stack for execution**
+* They may access data from the **heap**
+
+---
+
+
+
+
+
+🔰 12. Strings
+Q) String Data Type
+## 🔹 String Data Type (in C#)
+
+### 📌 What is String?
+
+A **string** in C# is a data type used to store a **sequence of characters (text)** such as names, messages, or sentences.
+
+It is a **reference type** in the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Declaration of String
+
+```csharp
+string name = "Manish";
+```
+
+👉 `"Manish"` is stored in **heap memory**
+👉 `name` holds the reference to that object
+
+---
+
+## 🔹 Example Program
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string message = "Hello, C#";
+        Console.WriteLine(message);
+    }
+}
+```
+
+👉 Output:
+
+```
+Hello, C#
+```
+
+---
+
+## 🔹 Key Features of String
+
+* ✔ Stores **text (characters)**
+* ✔ Enclosed in **double quotes (" ")**
+* ✔ **Immutable** (cannot be changed once created)
+* ✔ Stored in **heap memory**
+
+---
+
+## 🔹 Common String Operations
+
+### 1. **Concatenation (Joining Strings)**
+
+```csharp
+string first = "Hello";
+string second = "World";
+string result = first + " " + second;
+```
+
+---
+
+### 2. **Length**
+
+```csharp
+string name = "Manish";
+Console.WriteLine(name.Length);
+```
+
+---
+
+### 3. **ToUpper() / ToLower()**
+
+```csharp
+string text = "hello";
+Console.WriteLine(text.ToUpper());
+```
+
+---
+
+### 4. **Substring**
+
+```csharp
+string str = "Hello";
+Console.WriteLine(str.Substring(0, 2)); // He
+```
+
+---
+
+## 🔹 Important Point (Immutability)
+
+```csharp
+string s = "Hello";
+s = s + " World";
+```
+
+👉 A **new string object** is created (original is unchanged)
+
+---
+
+## 🔹 Real-Life Analogy
+
+A string is like a **sentence written on paper**:
+
+* You cannot change it directly
+* You must create a new one
+
+---
+
+## ✅ Summary
+
+* String is a **reference type** used to store text
+* Stored in **heap memory**
+* It is **immutable** and supports many useful operations
+
+---
+
+
+Q) Why Strings are Immutable
+## 🔹 Why Strings are Immutable (in C#)
+
+### 📌 What does Immutable Mean?
+
+**Immutable** means **cannot be changed after creation**.
+In C#, once a string is created, its value **cannot be modified**—any change creates a **new string object**.
+
+---
+
+## 🔹 Example
+
+```csharp
+string s = "Hello";
+s = s + " World";
+```
+
+👉 `"Hello"` is not changed
+👉 A new string `"Hello World"` is created
+
+---
+
+## 🔹 Reasons Why Strings are Immutable
+
+### 1. ✔ **Performance Optimization (String Interning)**
+
+* C# stores strings in a **string pool**
+* Same values reuse memory instead of creating duplicates
+
+👉 Example:
+
+```csharp
+string a = "Hello";
+string b = "Hello"; // same memory reference
+```
+
+---
+
+### 2. ✔ **Security**
+
+* Strings are often used for **sensitive data** (passwords, keys)
+* Immutability prevents accidental or malicious changes
+
+---
+
+### 3. ✔ **Thread Safety**
+
+* Multiple threads can use the same string safely
+* No risk of data being modified unexpectedly
+
+---
+
+### 4. ✔ **Memory Efficiency**
+
+* Reuse of string objects reduces memory usage
+* Avoids unnecessary duplication
+
+---
+
+### 5. ✔ **Consistency and Reliability**
+
+* Once created, the value remains constant
+* Makes debugging and program behavior predictable
+
+---
+
+## 🔹 What Happens Internally
+
+* Original string remains unchanged
+* New string object is created in heap
+* Reference variable points to new object
+
+---
+
+## 🔹 Real-Life Analogy
+
+A string is like a **printed book**:
+
+* You cannot change the text
+* To modify it, you must print a new edition
+
+---
+
+## 🔹 Disadvantage
+
+* ❌ Creating new objects repeatedly can affect performance
+
+👉 Solution: Use **StringBuilder** for frequent modifications
+
+---
+
+## ✅ Summary
+
+Strings are immutable in C# to ensure **security, performance, memory efficiency, and thread safety**, even though it may create new objects when modified.
+
+---
+
+
+
+Q) Common String Operations
+## 🔹 Common String Operations (in C#)
+
+### 📌 Introduction
+
+Strings in C# are used to handle **text data** and provide many built-in methods for manipulation.
+They are part of the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 1. Concatenation (Joining Strings)
+
+* Combines two or more strings
+
+```csharp
+string a = "Hello";
+string b = "World";
+string result = a + " " + b;
+Console.WriteLine(result);
+```
+
+---
+
+## 🔹 2. Length
+
+* Returns the number of characters
+
+```csharp
+string name = "Manish";
+Console.WriteLine(name.Length); // 6
+```
+
+---
+
+## 🔹 3. ToUpper() and ToLower()
+
+* Changes case of characters
+
+```csharp
+string text = "hello";
+Console.WriteLine(text.ToUpper()); // HELLO
+Console.WriteLine(text.ToLower()); // hello
+```
+
+---
+
+## 🔹 4. Substring()
+
+* Extracts part of a string
+
+```csharp
+string str = "Hello";
+Console.WriteLine(str.Substring(0, 2)); // He
+```
+
+---
+
+## 🔹 5. Compare Strings
+
+* Checks if two strings are equal
+
+```csharp
+string a = "Hi";
+string b = "Hi";
+
+Console.WriteLine(a == b); // true
+```
+
+---
+
+## 🔹 6. Contains()
+
+* Checks if a string contains a substring
+
+```csharp
+string text = "Hello World";
+Console.WriteLine(text.Contains("World")); // true
+```
+
+---
+
+## 🔹 7. Replace()
+
+* Replaces part of a string
+
+```csharp
+string text = "Hello World";
+Console.WriteLine(text.Replace("World", "C#"));
+```
+
+---
+
+## 🔹 8. Trim()
+
+* Removes extra spaces
+
+```csharp
+string text = "  Hello  ";
+Console.WriteLine(text.Trim());
+```
+
+---
+
+## 🔹 9. Split()
+
+* Splits string into parts
+
+```csharp
+string text = "A,B,C";
+string[] arr = text.Split(',');
+```
+
+---
+
+## 🔹 10. IndexOf()
+
+* Finds position of a character
+
+```csharp
+string text = "Hello";
+Console.WriteLine(text.IndexOf('e')); // 1
+```
+
+---
+
+## 🔹 Key Points
+
+* Strings are **immutable**
+* Operations create **new string objects**
+* Many built-in methods simplify text processing
+
+---
+
+## 🔹 Summary
+
+Common string operations in C# include **concatenation, length, case conversion, substring, comparison, replace, trim, split, and search**, making it easy to work with text data.
+
+---
+
+
+
+Q) String vs StringBuilder
+
+## 🔹 String vs StringBuilder (in C#)
+
+### 📌 Introduction
+
+In C#, both **String** and **StringBuilder** are used to handle text, but they differ in how they manage memory and modifications.
+
+They are part of the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 String
+
+### 📌 Definition
+
+* `string` is a **reference type**
+* It is **immutable** (cannot be changed after creation)
+
+### 🔹 Example:
+
+```csharp
+string s = "Hello";
+s = s + " World"; // creates new object
+```
+
+---
+
+## 🔹 StringBuilder
+
+### 📌 Definition
+
+* `StringBuilder` is a **mutable object**
+* It allows **modifying the same string without creating new objects**
+
+### 🔹 Example:
+
+```csharp
+using System.Text;
+
+StringBuilder sb = new StringBuilder("Hello");
+sb.Append(" World"); // modifies same object
+```
+
+---
+
+## 🔹 Key Differences
+
+| Feature      | String                         | StringBuilder               |
+| ------------ | ------------------------------ | --------------------------- |
+| Mutability   | Immutable                      | Mutable                     |
+| Memory Usage | Creates new object each change | Modifies existing object    |
+| Performance  | Slower for multiple changes    | Faster for frequent changes |
+| Namespace    | System                         | System.Text                 |
+| Use Case     | Fixed text                     | Frequently changing text    |
+
+---
+
+## 🔹 When to Use
+
+* 👉 Use **String**:
+
+  * When data is **constant or rarely changed**
+
+* 👉 Use **StringBuilder**:
+
+  * When performing **multiple modifications** (loops, concatenation)
+
+---
+
+## 🔹 Example Comparison
+
+```csharp
+// Using String
+string s = "";
+for (int i = 0; i < 5; i++)
+{
+    s += i; // creates new object each time
+}
+
+// Using StringBuilder
+StringBuilder sb = new StringBuilder();
+for (int i = 0; i < 5; i++)
+{
+    sb.Append(i); // efficient
+}
+```
+
+---
+
+## 🔹 Real-Life Analogy
+
+* **String** → Writing with pen (cannot erase, must rewrite)
+* **StringBuilder** → Writing with pencil (can modify easily)
+
+---
+
+## ✅ Summary
+
+* **String** is immutable and creates new objects on modification
+* **StringBuilder** is mutable and more efficient for frequent changes
+* Choose based on performance and usage needs
+
+---
+
+
+
+🔰 13. Arrays
+Q) What is an Array
+## 🔹 What is an Array (in C#)?
+
+### 📌 Definition
+
+An **array** is a collection of **elements of the same data type** stored in **contiguous memory locations**.
+
+It allows you to store multiple values in a **single variable** instead of creating separate variables.
+
+Arrays are part of the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Syntax
+
+```csharp
+dataType[] arrayName;
+```
+
+---
+
+## 🔹 Example
+
+```csharp id="arr1"
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] numbers = {1, 2, 3, 4, 5};
+
+        Console.WriteLine(numbers[0]); // Access first element
+    }
+}
+```
+
+👉 Output:
+
+```
+1
+```
+
+---
+
+## 🔹 Key Features
+
+* ✔ Stores multiple values of same type
+* ✔ Fixed size (defined at creation)
+* ✔ Indexed (starts from 0)
+* ✔ Stored in **heap memory** (reference type)
+
+---
+
+## 🔹 Types of Arrays
+
+### 1. **Single-Dimensional Array**
+
+```csharp id="arr2"
+int[] arr = {1, 2, 3};
+```
+
+---
+
+### 2. **Multi-Dimensional Array**
+
+```csharp id="arr3"
+int[,] matrix = {{1,2},{3,4}};
+```
+
+---
+
+### 3. **Jagged Array**
+
+```csharp id="arr4"
+int[][] jagged = new int[2][];
+```
+
+---
+
+## 🔹 Accessing Elements
+
+```csharp id="arr5"
+int[] arr = {10, 20, 30};
+Console.WriteLine(arr[1]); // 20
+```
+
+---
+
+## 🔹 Real-Life Analogy
+
+An array is like a **row of lockers**:
+
+* Each locker stores one item
+* All lockers are of the same type
+* Each has an index (number)
+
+---
+
+## ✅ Summary
+
+An **array** is a data structure used to store **multiple values of the same type** in a single variable, making data management easier and efficient.
+
+---
+
+
+
+Q) 1D Arrays
+## 🔹 1D Arrays (One-Dimensional Arrays in C#)
+
+### 📌 What is a 1D Array?
+
+A **1D (one-dimensional) array** is a collection of elements of the **same data type stored in a single row (linear form)**.
+
+It is the most basic type of array in C# and is part of the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Syntax
+
+```csharp
+dataType[] arrayName;
+```
+
+---
+
+## 🔹 Declaration and Initialization
+
+### 🔸 Method 1: Declare then assign
+
+```csharp
+int[] numbers = new int[5];
+numbers[0] = 10;
+numbers[1] = 20;
+```
+
+---
+
+### 🔸 Method 2: Direct initialization
+
+```csharp
+int[] numbers = {10, 20, 30, 40, 50};
+```
+
+---
+
+## 🔹 Example Program
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] arr = {1, 2, 3, 4, 5};
+
+        for (int i = 0; i < arr.Length; i++)
+        {
+            Console.WriteLine(arr[i]);
+        }
+    }
+}
+```
+
+👉 Output:
+
+```
+1
+2
+3
+4
+5
+```
+
+---
+
+## 🔹 Accessing Elements
+
+* Array index starts from **0**
+
+```csharp
+int[] arr = {10, 20, 30};
+Console.WriteLine(arr[0]); // 10
+```
+
+---
+
+## 🔹 Key Features
+
+* ✔ Stores elements in **linear form**
+* ✔ Uses **indexing (0,1,2,...)**
+* ✔ Fixed size
+* ✔ Stored in **heap memory**
+
+---
+
+## 🔹 Advantages
+
+* Easy to use
+* Fast access using index
+* Efficient storage of multiple values
+
+---
+
+## 🔹 Real-Life Analogy
+
+A 1D array is like a **row of seats in a classroom**:
+
+* Each seat has a number (index)
+* Each seat holds one student (value)
+
+---
+
+## ✅ Summary
+
+A **1D array** is a simple data structure used to store **multiple values in a single line**, accessed using an index.
+
+---
+
+
+
+
+Q) 2D Arrays
+
+## 🔹 2D Arrays (Two-Dimensional Arrays in C#)
+
+### 📌 What is a 2D Array?
+
+A **2D (two-dimensional) array** is an array that stores elements in **rows and columns (table format)**.
+
+👉 It is like a **matrix** or grid.
+
+It is part of the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Syntax
+
+```csharp
+dataType[,] arrayName;
+```
+
+---
+
+## 🔹 Declaration and Initialization
+
+### 🔸 Method 1: Declare with size
+
+```csharp
+int[,] arr = new int[2, 3];
+```
+
+---
+
+### 🔸 Method 2: Direct initialization
+
+```csharp
+int[,] arr = {
+    {1, 2, 3},
+    {4, 5, 6}
+};
+```
+
+---
+
+## 🔹 Example Program
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[,] matrix = {
+            {1, 2},
+            {3, 4}
+        };
+
+        for (int i = 0; i < 2; i++)
+        {
+            for (int j = 0; j < 2; j++)
+            {
+                Console.Write(matrix[i, j] + " ");
+            }
+            Console.WriteLine();
+        }
+    }
+}
+```
+
+👉 Output:
+
+```
+1 2
+3 4
+```
+
+---
+
+## 🔹 Accessing Elements
+
+* Uses **two indices** → `[row, column]`
+
+```csharp
+Console.WriteLine(arr[0,1]); // Access element at row 0, column 1
+```
+
+---
+
+## 🔹 Key Features
+
+* ✔ Stores data in **tabular (row-column) form**
+* ✔ Uses **two indices**
+* ✔ Fixed size
+* ✔ Stored in **heap memory**
+
+---
+
+## 🔹 Advantages
+
+* Easy representation of **matrices and tables**
+* Efficient for handling structured data
+
+---
+
+## 🔹 Real-Life Analogy
+
+A 2D array is like a **spreadsheet or table**:
+
+* Rows → horizontal
+* Columns → vertical
+* Each cell has a value
+
+---
+
+## ✅ Summary
+
+A **2D array** is used to store data in **rows and columns**, making it useful for representing tables, matrices, and grids in C#.
+
+---
+
+
+Q) Static Arrays
+
+## 🔹 Static Arrays (in C#)
+
+### 📌 What is a Static Array?
+
+A **static array** is an array whose **size is fixed at the time of declaration** and **cannot be changed during program execution**.
+
+👉 Once created, you **cannot increase or decrease its size**.
+
+It is part of the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Syntax
+
+```csharp
+dataType[] arrayName = new dataType[size];
+```
+
+---
+
+## 🔹 Example
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] arr = new int[5]; // static array of size 5
+
+        arr[0] = 10;
+        arr[1] = 20;
+        arr[2] = 30;
+        arr[3] = 40;
+        arr[4] = 50;
+
+        Console.WriteLine(arr[2]); // Output: 30
+    }
+}
+```
+
+---
+
+## 🔹 Key Features
+
+* ✔ Fixed size (cannot be changed)
+* ✔ Stores elements of the **same data type**
+* ✔ Uses **indexing (0 to size-1)**
+* ✔ Stored in **heap memory**
+
+---
+
+## 🔹 Advantages
+
+* ✔ Simple and easy to use
+* ✔ Fast access using index
+* ✔ Efficient memory allocation
+
+---
+
+## 🔹 Disadvantages
+
+* ❌ Size cannot be changed after declaration
+* ❌ May waste memory if size is too large
+* ❌ May cause overflow if size is too small
+
+---
+
+## 🔹 Real-Life Analogy
+
+A static array is like a **fixed-size parking lot**:
+
+* Limited number of slots
+* Cannot add more slots later
+
+---
+
+## 🔹 Static vs Dynamic Array
+
+| Feature     | Static Array   | Dynamic Array   |
+| ----------- | -------------- | --------------- |
+| Size        | Fixed          | Can grow/shrink |
+| Flexibility | Less           | More            |
+| Memory      | Allocated once | Resizable       |
+
+---
+
+## ✅ Summary
+
+A **static array** is a fixed-size collection of elements that cannot be resized, making it simple and efficient for storing a known number of values.
+
+---
+
+
+Q) Dynamic Arrays
+
+## 🔹 Dynamic Arrays (in C#)
+
+### 📌 What is a Dynamic Array?
+
+A **dynamic array** is a collection that can **grow or shrink in size during runtime**.
+
+👉 Unlike static arrays, its size is **not fixed**.
+
+In C#, dynamic arrays are commonly implemented using classes like **`List<T>`** from the **System.Collections.Generic** namespace in the .NET platform developed by Microsoft.
+
+---
+
+## 🔹 Example using List (Dynamic Array)
+
+```csharp
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        List<int> numbers = new List<int>();
+
+        numbers.Add(10);
+        numbers.Add(20);
+        numbers.Add(30);
+
+        numbers.Remove(20);
+
+        foreach (int num in numbers)
+        {
+            Console.WriteLine(num);
+        }
+    }
+}
+```
+
+👉 Output:
+
+```
+10
+30
+```
+
+---
+
+## 🔹 Key Features
+
+* ✔ **Resizable** (can grow or shrink)
+* ✔ Easy to add/remove elements
+* ✔ Stored in **heap memory**
+* ✔ Provides many built-in methods
+
+---
+
+## 🔹 Common Methods
+
+| Method     | Description                  |
+| ---------- | ---------------------------- |
+| `Add()`    | Adds element                 |
+| `Remove()` | Removes element              |
+| `Insert()` | Inserts at specific position |
+| `Count`    | Returns number of elements   |
+| `Clear()`  | Removes all elements         |
+
+---
+
+## 🔹 Static vs Dynamic Arrays
+
+| Feature     | Static Array   | Dynamic Array (List) |
+| ----------- | -------------- | -------------------- |
+| Size        | Fixed          | Flexible             |
+| Memory      | Allocated once | Resizable            |
+| Performance | Faster         | Slightly slower      |
+| Flexibility | Less           | More                 |
+
+---
+
+## 🔹 Advantages
+
+* ✔ Flexible size
+* ✔ Easy to use
+* ✔ Efficient for unknown data size
+
+---
+
+## 🔹 Disadvantages
+
+* ❌ Slightly slower than static arrays
+* ❌ Uses extra memory for resizing
+
+---
+
+## 🔹 Real-Life Analogy
+
+A dynamic array is like a **stretchable bag**:
+
+* You can add or remove items anytime
+
+---
+
+## ✅ Summary
+
+A **dynamic array** in C# is a **resizable collection (like List)** that allows adding and removing elements during runtime, making it more flexible than static arrays.
+
+---
+
