@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "basic_code": {
+      "commandName": "Project"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    }
+  }
+}
