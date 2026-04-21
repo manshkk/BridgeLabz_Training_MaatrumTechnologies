@@ -69,6 +69,8 @@ namespace basic_code
                 Console.WriteLine("48. Search in Rotated Array");
                 Console.WriteLine("49. Find Peak Element");
                 Console.WriteLine("50. Trapping Rain Water");
+                Console.WriteLine("51. Snake and Ladder (Single Player)");
+                Console.WriteLine("52. Snake and Ladder (Two Player)");
 
                 Console.WriteLine("0. Exit");
 
@@ -140,6 +142,13 @@ namespace basic_code
                     case 48: new SearchRotatedArray().Search(); break;
                     case 49: new FindPeakElement().Find(); break;
                     case 50: new TrappingRainWater().Calculate(); break;
+                    case 51:
+                        new SnakeAndLadder().Play();
+                        break;
+
+                    case 52:
+                        new SnakeAndLadderTwoPlayer().Play();
+                        break;
 
                     case 0:
                         Console.WriteLine("Exiting...");
