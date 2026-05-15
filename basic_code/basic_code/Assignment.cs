@@ -71,6 +71,9 @@ namespace basic_code
                 Console.WriteLine("50. Trapping Rain Water");
                 Console.WriteLine("51. Snake and Ladder (Single Player)");
                 Console.WriteLine("52. Snake and Ladder (Two Player)");
+                Console.WriteLine("53. Grade system ");
+                Console.WriteLine("54. Employee Management System");
+                Console.WriteLine("55. Employee Wage System");
 
                 Console.WriteLine("0. Exit");
 
@@ -148,6 +151,47 @@ namespace basic_code
 
                     case 52:
                         new SnakeAndLadderTwoPlayer().Play();
+                        break;
+
+                    case 53:
+                        Student student = new Student
+                        {
+                            StudentId = 1,
+                            Name = "Manish",
+                            Math = 85,
+                            Science = 90,
+                            English = 80
+                        };
+
+                        SchoolResult result = new SchoolResult(student);
+                        result.DisplayResult();
+                        break;
+
+                    case 54:
+
+                        Employee emp1 = new FullTimeEmployee(1, "Rahul", 50000);
+                        Employee emp2 = new PartTimeEmployee(2, "Amit", 20, 500);
+                        Employee emp3 = new ContractEmployee(3, "Neha", 30000);
+
+                        Employee[] employees = { emp1, emp2, emp3 };
+
+                        foreach (Employee emp in employees)
+                        {
+                            emp.CalculateSalary();     // Polymorphism
+                            emp.DisplayDetails();
+                        }
+
+                        break;
+
+                    case 55:
+                        EmployeeWageBuilder builder = new EmployeeWageBuilder();
+
+                        builder.AddCompany("TCS", 20, 20, 100);
+                        builder.AddCompany("Infosys", 25, 22, 110);
+
+                        builder.ComputeWages();
+
+                        Console.WriteLine("Wage for TCS: " + builder.GetTotalWage("TCS"));
                         break;
 
                     case 0:
